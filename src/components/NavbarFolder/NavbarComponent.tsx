@@ -1,5 +1,9 @@
 import './Navbar.css';
 
+interface NavProps {
+    
+}
+
 const Navbar = () => {
     return(
         <>
