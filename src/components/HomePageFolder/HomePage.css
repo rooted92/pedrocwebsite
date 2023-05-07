@@ -4,8 +4,12 @@
     color: rgba(89, 248, 232, 1);
 }
 
-.smokeyGray {
-    color: rgba(255, 255, 255, 1);
+.smokeyGrayText {
+    color: rgba(201, 211, 211, 1);
+}
+
+.smokeGreyText {
+  color: rgba(174, 180, 187, 1);
 }
 
 .nunito {
@@ -14,6 +18,10 @@
 
 .inder {
     font-family: 'Inder', sans-serif;
+}
+
+.quattroFont {
+  font-family: 'Quattrocento', serif;
 }
 
 /* width */
