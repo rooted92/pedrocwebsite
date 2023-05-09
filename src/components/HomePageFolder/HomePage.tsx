@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../NavbarFolder/NavbarComponent';
 import Footer from '../FooterFolder/FooterComponent';
 import IconComponent from '../IconFolder/IconComponent';
@@ -35,16 +35,34 @@ import './HomePage.css';
 
 const HomePage = () => {
 
+    const greetingsArr: Array<string> = ["Hi,", "Hey there,", "Greetings,", "Howdy,", "Salutations,", "Good day,", "Hello,", "Welcome,"];
+    const [greeting, setGreeting] = useState<string>('Hi there,');
+    const [isFaded, setIsFaded] = useState<boolean>(false);
+
+    useEffect(() => {
+        // saving setInterval to variable to be cleared every 3 seconds
+        const greetingRandomizer = setInterval(() => {
+            let rndIndex = Math.floor(Math.random() * greetingsArr.length);
+            setGreeting(greetingsArr[rndIndex]);
+            setIsFaded(true);
+        }, 3500);
+        return () => clearInterval(greetingRandomizer);
+    }, []);
+
+    useEffect(() => {
+        const removeFade = setTimeout(() => setIsFaded(false), 1000);
+        return () => clearInterval(removeFade);
+    });
+
     return (
         <>
             <div id='top' className="flex flex-col h-screen inder">
                 <Navbar />
                 <div className="flex-grow container mx-auto">
-
                     <div id='about' className="container mx-10 mt-20 md:mx-24 md:mt-28 lg:mt-48 w-auto">
                         <div className="md:grid md:grid-cols-1 md:gap-y-8 lg:gap-0 lg:grid lg:grid-cols-3">
                             <div className='col-span-2'>
-                                <div className=' text-4xl md:text-9xl lightNeonBlue font-bold nunito'>Hi there,</div>
+                                <div className={`text-4xl md:text-9xl lightNeonBlue font-bold nunito ${isFaded ? 'fadeIn' : ''}`}>{greeting}</div>
                                 <p className='smokeGreyText w-full'>
                                     I'm Pedro Castaneda, a determined individual who transitioned from truck driving to software development after discovering the potential of web3 technologies through NFTs. Inspired by my persistence on the road, I bring the same tenacity to coding, navigating complex challenges and finding efficient solutions. With a drive for problem-solving and an eagerness to embrace new possibilities, I embarked on a dedicated journey into software development, fueled by unwavering commitment.</p>
                             </div>
@@ -55,7 +73,7 @@ const HomePage = () => {
 
                     </div>
                     <div id='projects'></div>
-                    <div  className='container mt-4 md:mx-24 w-auto md:mt-10 lg:mt-32'>
+                    <div className='container mt-4 md:mx-24 w-auto md:mt-10 lg:mt-32'>
                         <p className='lightNeonBlue font-bold text-4xl md:mb-8 nunito text-center md:text-start'>Projects</p>
                         <div className="container mx-auto w-auto px-10 smokeyGrayText">
                             {/* Project #1 */}

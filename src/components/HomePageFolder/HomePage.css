@@ -45,3 +45,13 @@
   ::-webkit-scrollbar-thumb:hover {
 
   }
+
+  .fadeIn{
+    animation:fading 1s ease-in
+  }
+  
+  @keyframes fading{
+    0%{opacity:0}
+    50%{opacity:.5}
+    100%{opacity:1}
+  }
