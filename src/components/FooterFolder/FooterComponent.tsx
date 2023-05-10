@@ -6,7 +6,7 @@ import ReactIcon from '../../assets/atom.svg';
 import TypescriptIcon from '../../assets/typescript.svg';
 import TailwindIcon from '../../assets/tailwindIcon.png';
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
 
     return (
         <>

@@ -1,10 +1,10 @@
 import './Navbar.css';
-import Resume from '../../assets/PedroCastanedaResume.png';
+import Resume from '../../assets/PedroCResForWeb.svg';
 import { useState } from 'react';
 
-const Navbar = () => {
+const Navbar = (): JSX.Element => {
 
-    const [isHidden, setIsHidden] = useState(false);
+    const [isHidden, setIsHidden] = useState<boolean>(false);
 
     const ResumeToggle = () => {
         setIsHidden(!isHidden);

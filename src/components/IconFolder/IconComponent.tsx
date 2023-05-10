@@ -4,7 +4,7 @@ interface IconProps {
     iconClasses: string;
 }
 
-const IconComponent = ({ icon, name, iconClasses }: IconProps) => {
+const IconComponent = ({ icon, name, iconClasses }: IconProps): JSX.Element => {
     return (
         <>
             <div className="flex flex-col justify-center">
