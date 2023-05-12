@@ -71,13 +71,13 @@ const HomePage = (): JSX.Element => {
                         <p className='lightNeonBlue font-bold text-4xl md:mb-8 nunito text-center md:text-start'>Projects</p>
                         <div className="container mx-auto w-auto px-10 smokeyGrayText">
                             {/* Project #1 */}
-                            <div className="grid grid-cols-1 md:grid-cols-2">
+                            <div className="grid grid-cols-1 lg:grid-cols-2">
                                 <div className='mb-4 md:mb-0 md:h-72 flex flex-col items-center w-full'>
                                     <div className='flex md:flex-col md:items-center lg:flex-row'>
                                         <img className='h-auto w-12 md:w-24 mt-6' src={FleetFinderIcon} alt="Fleet Finder icon" />
                                         <p className='mt-4 self-center text-lg md:text-4xl'>Fleet Finder</p>
                                     </div>
-                                    <div className="grid grid-cols-2 self-start md:grid md:grid-cols-1 md:self-start lg:grid lg:grid-cols-2 lg:self-start lg:gap-x-2 lg:justify-items-center xl:grid xl:grid-cols-2 xl:justify-items-center xl:self-center xl:gap-2">
+                                    <div className="grid grid-cols-2 self-start md:grid md:grid-cols-3 md:justify-items-center md:self-auto lg:grid lg:grid-cols-2 lg:self-start lg:gap-x-2 lg:justify-items-center xl:grid xl:grid-cols-2 xl:justify-items-center xl:self-center xl:gap-2">
                                         <a href='https://fleetfinder.pedroc.dev/' target='_blank' className='text-sm mt-8 lightNeonBlue hover:animate-pulse rounded-md hover:shadow-lg hover:shadow-teal-300 p-2'>view website</a>
                                         <a href='https://github.com/rooted92/frontendFF' target='_blank' className='text-sm mt-8 lightNeonBlue hover:animate-pulse rounded-md hover:shadow-lg hover:shadow-teal-300 p-2'>view frontend code</a>
                                         <a href='https://github.com/rooted92/backendFF' target='_blank' className='cols-span-2 md:col-span-1 text-sm mt-8 lightNeonBlue hover:animate-pulse rounded-md hover:shadow-lg hover:shadow-teal-300 p-2 lg:col-span-2'>view backend code</a>
@@ -100,14 +100,14 @@ const HomePage = (): JSX.Element => {
                             </div>
                             <hr className=' border-teal-300 rounded-3xl my-6' />
                             {/* Project #2 */}
-                            <div className="grid grid-cols-1 md:grid-cols-2">
+                            <div className="grid grid-cols-1 lg:grid-cols-2">
                                 <div className='md:h-72  flex flex-col md:pt-20 items-center w-full p-2 '>
                                     <p className='brownFont text-6xl flex flex-row quattroFont'>P<img className='w-8 h-8 mt-4' src={PokeballImg} alt="pokeball" />kedex</p>
-                                    <div className="grid grid-cols-2 self-center md:grid md:grid-cols-1 md:self-start lg:grid lg:grid-cols-2 lg:justify-items-start lg:self-start lg:gap-x-2 xl:grid xl:grid-cols-2 xl:justify-items-center xl:self-center xl:gap-2">
-                                        <a href='https://pokemonv1.pedroc.dev/' target='_blank' className='text-sm mt-8 lightNeonBlue hover:animate-pulse rounded-md hover:shadow-lg hover:shadow-teal-300 p-2'>view old website</a>
-                                        <a href='https://pokedex.pedroc.dev/' target='_blank' className='text-sm mt-8 lightNeonBlue hover:animate-pulse rounded-md hover:shadow-lg hover:shadow-teal-300 p-2'>view new website</a>
-                                        <a href='https://github.com/rooted92/pokemanApi' target='_blank' className='text-sm mt-8 lightNeonBlue hover:animate-pulse rounded-md hover:shadow-lg hover:shadow-teal-300 p-2'>old code</a>
-                                        <a href='https://github.com/rooted92/pokedexreact' target='_blank' className='text-sm mt-8 lightNeonBlue hover:animate-pulse rounded-md hover:shadow-lg hover:shadow-teal-300 p-2'>new code</a>
+                                    <div className="grid grid-cols-2 self-center md:grid md:grid-cols-2 md:justify-items-center lg:grid lg:grid-cols-2 lg:justify-items-start lg:self-start lg:gap-x-2 xl:grid xl:grid-cols-2 xl:justify-items-center xl:self-center xl:gap-2">
+                                        <a href='https://pokedex.pedroc.dev/' target='_blank' className='text-sm mt-8 lightNeonBlue hover:animate-pulse rounded-md hover:shadow-lg hover:shadow-teal-300 p-2'>version 2.0</a>
+                                        <a href='https://pokemonv1.pedroc.dev/' target='_blank' className='text-sm mt-8 lightNeonBlue hover:animate-pulse rounded-md hover:shadow-lg hover:shadow-teal-300 p-2'>version 1.0</a>
+                                        <a href='https://github.com/rooted92/pokedexreact' target='_blank' className='text-sm mt-8 lightNeonBlue hover:animate-pulse rounded-md hover:shadow-lg hover:shadow-teal-300 p-2'>v2 code</a>
+                                        <a href='https://github.com/rooted92/pokemanApi' target='_blank' className='text-sm mt-8 lightNeonBlue hover:animate-pulse rounded-md hover:shadow-lg hover:shadow-teal-300 p-2'>v1 code</a>
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
@@ -123,7 +123,7 @@ const HomePage = (): JSX.Element => {
                             </div>
                             <hr className=' border-teal-300 rounded-3xl my-6' />
                             {/* Project #3 */}
-                            <div className="grid grid-cols-1 md:grid-cols-2">
+                            <div className="grid grid-cols-1 lg:grid-cols-2">
                                 <div className='min-h-72 relative flex flex-col items-center w-full md:p-2 '>
                                     <img src={StarWarsLogo} className='h-44 w-auto' alt="starwars logo" />
                                     <div className="flex flex-row space-x-2">
@@ -145,7 +145,7 @@ const HomePage = (): JSX.Element => {
                             </div>
                             <hr className=' border-teal-300 rounded-3xl my-6' />
                             {/* Project #4 */}
-                            <div className="grid grid-cols-1 md:grid-cols-2">
+                            <div className="grid grid-cols-1 lg:grid-cols-2">
                                 <div className='min-h-72 relative flex flex-col items-center w-full md:p-2 '>
                                     <p className='nunito smokeGrayText lg:text-xl mb-1'>Random Advice Generator</p>
                                     <img src={RAG} className='h-auto w-52 lg:h-44 lg:w-auto my-8 md:my-1' alt="screenshot of random advice generator" />
