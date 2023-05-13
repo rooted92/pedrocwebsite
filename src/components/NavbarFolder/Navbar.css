@@ -17,6 +17,10 @@
     color: rgba(89, 248, 232, 1);
 }
 
+#navbar-hamburger a:hover {
+    color: rgba(89, 248, 232, 1);
+}
+
 .lightNeonBlue {
     color: rgba(89, 248, 232, 1);
 }
