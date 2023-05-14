@@ -33,24 +33,24 @@ const Navbar = (): JSX.Element => {
                     <div className={`${show ? '' : 'hidden'} w-full `} id="navbar-hamburger">
                         <ul className="flex flex-col font-medium mt-4 rounded-lg smokeyGrayText darkGreenBg">
                             <li>
-                                <a href="" className="block py-2 pl-3 pr-4">ABOUT</a>
+                                <a onClick={HamburgerMenuToggle} href="#" className="block py-2 pl-3 pr-4">ABOUT</a>
                             </li>
                             <li>
-                                <a href="#projects" className="block py-2 pl-3 pr-4">PROJECTS</a>
+                                <a onClick={HamburgerMenuToggle}  href="#projects" className="block py-2 pl-3 pr-4">PROJECTS</a>
                             </li>
                             <li>
-                                <a href="#flow" className="block py-2 pl-3 pr-4">FLOW</a>
+                                <a onClick={HamburgerMenuToggle}  href="#flow" className="block py-2 pl-3 pr-4">FLOW</a>
                             </li>
                             <li>
-                                <a href="#contact" className="block py-2 pl-3 pr-4">CONTACT</a>
+                                <a onClick={HamburgerMenuToggle}  href="#contact" className="block py-2 pl-3 pr-4">CONTACT</a>
                             </li>
                             <li>
                                 <button onClick={ResumeToggle}>
-                                    <a href="#" className="block py-2 pl-3 pr-4">RESUME</a>
+                                    <a onClick={HamburgerMenuToggle}  href="#" className="block py-2 pl-3 pr-4">RESUME</a>
                                 </button>
                             </li>
                             <li>
-                                <a href="#social" className="block py-2 pl-3 pr-4">SOCIAL</a>
+                                <a onClick={HamburgerMenuToggle}  href="#social" className="block py-2 pl-3 pr-4">SOCIAL</a>
                             </li>
                         </ul>
                     </div>
