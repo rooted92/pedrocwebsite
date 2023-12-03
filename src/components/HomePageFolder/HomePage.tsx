@@ -58,7 +58,7 @@ const HomePage = (): JSX.Element => {
                             <div className='col-span-2 fadeIn'>
                                 <div className={`text-4xl md:text-6xl smokeyGrayText font-bold nunito ${isFaded ? 'fadeIn' : ''}`}>{greeting}</div>
                                 <p className='smokeGreyText w-full'>
-                                    I'm <span className='text-xl lightNeonBlue'>Pedro Castaneda</span>, a determined individual who transitioned from truck driving to software development after discovering the potential of web3 technologies through NFTs. Inspired by my persistence on the road, I bring the same tenacity to coding, navigating complex challenges and finding efficient solutions. With a drive for problem-solving and an eagerness to embrace new possibilities, I embarked on a dedicated journey into software development, fueled by unwavering commitment.</p>
+                                    I'm <span className='text-xl lightNeonBlue'>Pedro Castaneda</span>, seeking to enhance user experiences and drive growth at a forward-thinking company through impactful website creation</p>
                             </div>
                             <div className='flex justify-center'>
                                 <img className='mt-4 rounded-lg md:mt-0 md:w-3/4 md:h-96 md:object-cover md:object-top md:rounded-xl lg:w-auto lg:h-72 lg:hover:grayscale lg:rounded-full' src={Headshot} alt="Picture of me, Pedro" />
