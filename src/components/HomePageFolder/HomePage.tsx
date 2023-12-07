@@ -57,18 +57,18 @@ const HomePage = (): JSX.Element => {
                         <div className="md:grid md:grid-cols-1 md:gap-y-8 lg:gap-0 lg:grid lg:grid-cols-3">
                             <div className='col-span-2 fadeIn'>
                                 <div className={`text-4xl md:text-6xl smokeyGrayText font-bold nunito ${isFaded ? 'fadeIn' : ''}`}>{greeting}</div>
-                                <p className='smokeGreyText w-full'>
-                                    I'm <span className='text-xl lightNeonBlue'>Pedro Castaneda</span>, seeking to enhance user experiences and drive growth at a forward-thinking company through impactful website creation</p>
+                                <p className='smokeGreyText w-full text-2xl'>
+                                    I'm <span className='text-3xl lightNeonBlue'>Pedro Castaneda</span>, seeking to enhance user experiences and drive growth at a forward-thinking company through impactful website creation</p>
                             </div>
                             <div className='flex justify-center'>
-                                <img className='mt-4 rounded-lg md:mt-0 md:w-3/4 md:h-96 md:object-cover md:object-top md:rounded-xl lg:w-auto lg:h-72 lg:hover:grayscale lg:rounded-full' src={Headshot} alt="Picture of me, Pedro" />
+                                <img className='mt-4 md:mt-0 md:w-3/4 md:h-96 md:object-cover md:object-top rounded-xl lg:w-auto lg:h-72 shadow-zinc-950 shadow-lg' src={Headshot} alt="Picture of me, Pedro" />
                             </div>
                         </div>
 
                     </div>
                     <div id='projects'></div>
                     <div className='container mt-4 md:mx-24 w-auto md:mt-10 lg:mt-32'>
-                        <p className='lightNeonBlue font-bold text-4xl md:mb-8 nunito text-center md:text-start'>Projects</p>
+                        <p className='lightNeonBlue font-bold text-4xl mt-12 md:mb-8 nunito text-center md:text-start'>Projects</p>
                         <div className="container mx-auto w-auto px-10 smokeyGrayText">
                             {/* Project #1 */}
                             <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -87,7 +87,7 @@ const HomePage = (): JSX.Element => {
                                     <div className='flex flex-row'>
                                         <p className='font-bold text-xl lightNeonBlue'>Description</p>
                                     </div>
-                                    <p className='smokeyGrayText'>Fleet Finder is a project that improves communication and operational efficiency in the transportation industry. It simplifies the process of notifying dispatch teams about the location and important details of company trailers, benefiting truck drivers and dispatch teams alike. Using Fleet Finder, truck drivers can submit a form that provides real-time updates on trailer status and key information, which can be immediately viewed by the dispatch team.</p>
+                                    <p className='smokeyGrayText'>Fleet Finder streamlines communication in transportation, making it easier for truck drivers and dispatch teams to track and update the status and location of trailers.</p>
                                     <p className='font-bold text-xl mt-3 lightNeonBlue'>Built with</p>
                                     <div className="xl:grid xl:grid-cols-5 lg:grid lg:grid-cols-3 lg:gap-4 grid grid-cols-3 md:gap-x-8 md:gap-y-1 md:text-xs lg:text-base lg:p-4 mt-2">
                                         <IconComponent icon={ReactIcon} name='react.js' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -112,7 +112,7 @@ const HomePage = (): JSX.Element => {
                                 </div>
                                 <div className='flex flex-col'>
                                     <p className='font-bold text-xl lightNeonBlue'>Description</p>
-                                    <p className='smokeyGrayText'>Pokedex is an intuitive React.js application that leverages the Pokémon API to provide users with comprehensive information about Pokémon. The app allows users to search for Pokémon by name or ID, displaying details such as name, ID, image, type, location, evolutions, moves, abilities, and fun factoids. With enhanced features like favorites management and dynamic updates based on user input, Pokedex offers an improved and immersive experience compared to the original HTML, CSS, and vanilla JS version. It utilizes efficient helper functions to handle data formatting, retrieve relevant information, and present users with an engaging interface for exploring and learning about Pokémon.</p>
+                                    <p className='smokeyGrayText'>A React.js application that enhances user experience by offering detailed Pokémon information through the Pokémon API, featuring search options, favorites management, and a user-friendly interface for Pokémon exploration.</p>
                                     <p className='font-bold text-xl mt-3 lightNeonBlue'>Built with</p>
                                     <div className="grid grid-cols-3 md:gap-x-8 md:text-sm lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-5 lg:p-4 mt-2">
                                         <IconComponent icon={ReactIcon} name='react.js' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -133,7 +133,7 @@ const HomePage = (): JSX.Element => {
                                 </div>
                                 <div className='flex flex-col'>
                                     <p className='font-bold text-xl lightNeonBlue'>Description</p>
-                                    <p className='smokeyGrayText'>The Star Wars API project is a web application that utilizes the Star Wars API (<a className='hover:text-[#59F8E8]' href="https://swapi.dev/" target='_blank'>SWAPI</a>) to display data from various categories within the Star Wars universe. It fetches data from the API based on user-selected categories and search terms, dynamically generating cards or elements to present the retrieved information. The project includes pagination functionality for navigating large datasets, as well as features like loading animations and error messages. Implemented in JavaScript, the project showcases API integration and interactive web development, allowing users to explore and retrieve information from the vast Star Wars universe.</p>
+                                    <p className='smokeyGrayText'>This web app leverages the Star Wars API to dynamically display data from the Star Wars universe, offering user-driven search functionality, navigation through pagination, and engaging features like loading animations.</p>
                                     <p className='font-bold text-xl mt-3 lightNeonBlue'>Built with</p>
                                     <div className="grid grid-cols-3 md:gap-x-8 md:gap-y-1 md:text-sm lg:grid lg:grid-cols-4 lg:gap-x-4 xl:grid xl:grid-cols-5 lg:p-4 mt-2">
                                         <IconComponent icon={HTMLIcon} name='html' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -156,7 +156,7 @@ const HomePage = (): JSX.Element => {
                                 </div>
                                 <div className='flex flex-col'>
                                     <p className='font-bold text-xl lightNeonBlue'>Description</p>
-                                    <p className='smokeyGrayText'>The Random Advice Generator app utilizes the adviceslip API to fetch and display random advice. Clicking the dice button triggers the retrieval of new advice, ensuring a dynamic user experience. The app closely replicates the design from Frontmentor, showcasing attention to detail. </p>
+                                    <p className='smokeyGrayText'>An app that employs the adviceslip API to provide random advice at the click of a button, offering a dynamic and user-engaging experience with a design that mirrors the meticulous style of Frontmentor.</p>
                                     <p className='font-bold text-xl mt-3 lightNeonBlue'>Built with</p>
                                     <div className="grid grid-cols-3 md:gap-x-8 md:gap-y-1 md:text-sm lg:grid lg:grid-cols-4 lg:gap-x-4 xl:grid xl:grid-cols-5 lg:p-4 mt-2">
                                         <IconComponent icon={ReactIcon} name='react.js' iconClasses='h-auto w-8 lg:w-14 self-center' />
