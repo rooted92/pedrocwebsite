@@ -58,7 +58,7 @@ const HomePage = (): JSX.Element => {
                             <div className='col-span-2 fadeIn'>
                                 <div className={`text-4xl md:text-6xl smokeyGrayText font-bold nunito ${isFaded ? 'fadeIn' : ''}`}>{greeting}</div>
                                 <p className='smokeGreyText w-full text-2xl'>
-                                    I'm <span className='text-3xl lightNeonBlue'>Pedro Castaneda</span>, seeking to enhance user experiences and drive growth at a forward-thinking company through impactful website creation</p>
+                                    I'm <span className='text-3xl lightNeonBlue'>Pedro Castaneda</span>, seeking to enhance user experiences and drive growth at a forward-thinking company through impactful website creation.</p>
                             </div>
                             <div className='flex justify-center'>
                                 <img className='mt-4 md:mt-0 md:w-3/4 md:h-96 md:object-cover md:object-top rounded-xl lg:w-auto lg:h-72 shadow-zinc-950 shadow-lg' src={Headshot} alt="Picture of me, Pedro" />
@@ -68,7 +68,7 @@ const HomePage = (): JSX.Element => {
                     </div>
                     <div id='projects'></div>
                     <div className='container mt-4 md:mx-24 w-auto md:mt-10 lg:mt-32'>
-                        <p className='lightNeonBlue font-bold text-4xl mt-12 md:mb-8 nunito text-center md:text-start'>Projects</p>
+                        <p className='lightNeonBlue font-bold text-4xl mt-12 md:mb-8 nunito text-center md:text-start lg:mt-0'>Projects</p>
                         <div className="container mx-auto w-auto px-10 smokeyGrayText">
                             {/* Project #1 */}
                             <div className="grid grid-cols-1 lg:grid-cols-2">

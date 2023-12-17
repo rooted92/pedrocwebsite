@@ -45,9 +45,7 @@ const Navbar = (): JSX.Element => {
                                 <a onClick={HamburgerMenuToggle}  href="#contact" className="block py-2 pl-3 pr-4">CONTACT</a>
                             </li>
                             <li>
-                                <button onClick={ResumeToggle}>
-                                    <a onClick={HamburgerMenuToggle}  href="#" className="block py-2 pl-3 pr-4">RESUME</a>
-                                </button>
+                                    <a onClick={HamburgerMenuToggle}  href="../../assets/PedroC-resume.pdf" className="block py-2 pl-3 pr-4">RESUME</a>
                             </li>
                             <li>
                                 <a onClick={HamburgerMenuToggle}  href="#social" className="block py-2 pl-3 pr-4">SOCIAL</a>
