@@ -14,7 +14,7 @@ const Footer = (): JSX.Element => {
                 <div className="grid grid-cols-1 md:grid-cols-3 px-20 md:px-0 smokeGreyText mt-12">
                     <div id='contact' className='flex flex-col mb-6 md:mb-0 md:items-center'>
                         <p className='font-bold text-xl'>Contact</p>
-                        <p className='lightNeonBlue'>pedro@pedroc.dev</p>
+                        <a className='lightNeonBlue' href="mailto:pedro@pedroc.dev">pedro@pedroc.dev</a>
                     </div>
                     <div id='social' className='flex flex-col mb-6 md:mb-0 md:items-center'>
                         <p className='font-bold text-xl'>Social</p>
