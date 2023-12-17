@@ -1,5 +1,5 @@
 import './Navbar.css';
-import Resume from '../../assets/PedroCResForWeb.svg';
+import Resume from '../../assets/PedroC-resume.png';
 import { useState } from 'react';
 
 const Navbar = (): JSX.Element => {
@@ -45,7 +45,7 @@ const Navbar = (): JSX.Element => {
                                 <a onClick={HamburgerMenuToggle}  href="#contact" className="block py-2 pl-3 pr-4">CONTACT</a>
                             </li>
                             <li>
-                                    <a onClick={HamburgerMenuToggle}  href="../../assets/PedroC-resume.pdf" className="block py-2 pl-3 pr-4">RESUME</a>
+                                    <a onClick={HamburgerMenuToggle}  href="../../assets/PedroC-resume.png" className="block py-2 pl-3 pr-4">RESUME</a>
                             </li>
                             <li>
                                 <a onClick={HamburgerMenuToggle}  href="#social" className="block py-2 pl-3 pr-4">SOCIAL</a>
@@ -63,7 +63,7 @@ const Navbar = (): JSX.Element => {
                 <button onClick={ResumeToggle}><a href="#">RESUME</a></button>
                 <a href="#social">SOCIAL</a>
             </div>
-            <div id='resume' className={!isHidden ? 'hidden' : 'visible mt-16 mx-5 md:mt-36 container md:mx-40 md:w-auto'}>
+            <div id='resume' className={!isHidden ? 'hidden' : 'visible mt-16 mx-5 md:mt-36 container md:mx-40 md:w-auto z-50 absolute left-4'}>
                 <div className='flex flex-col items-center'>
                     {/* <iframe src={Resume} className='w-4/5 h-auto' ></iframe> */}
                     <button onClick={handleClose} className='mb-5 text-center uppercase font-bold text-3xl lightNeonBlue justify-self-end self-end'>x</button>
