@@ -63,10 +63,10 @@ const Navbar = (): JSX.Element => {
                 <button onClick={ResumeToggle}><a href="#">RESUME</a></button>
                 <a href="#social">SOCIAL</a>
             </div>
-            <div id='resume' className={!isHidden ? 'hidden' : 'visible m-auto z-10 absolute left-auto flex flex-row justify-center items-center'}>
-                <div className=''>
+            <div id='resume' className={!isHidden ? 'hidden' : 'visible z-10 absolute'}>
+                <div className='flex flex-row-reverse mt-12 justify-between'>
                     {/* <iframe src={Resume} className='w-4/5 h-auto' ></iframe> */}
-                    <button onClick={handleClose} className='mb-5 text-center uppercase font-bold text-3xl lightNeonBlue justify-self-end self-end'>x</button>
+                    <button onClick={handleClose} className='mb-5 text-center uppercase font-bold text-3xl lightNeonBlue self-start'>x</button>
                     <img src={Resume} alt="image of my resume" className='md:w-4/5 h-auto' />
                 </div>
             </div>
