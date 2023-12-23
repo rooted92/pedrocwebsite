@@ -55,7 +55,7 @@ const Navbar = (): JSX.Element => {
                 </div>
             </nav>
 
-            <div id='nav' className="invisible lg:visible smokeyGrayText flex w-full pb-2 pt-10 space-x-2 px-2 text-xs justify-around md:text-base lg:space-x-20 lg:px-28 md:pt-14 md:pb-8 darkGreenBg m:h-20 fixed md:w-screen z-10">
+            <div id='nav' className="invisible lg:visible smokeyGrayText flex w-full pb-2 pt-10 space-x-2 px-2 text-xs justify-around md:text-base lg:space-x-20 lg:px-28 md:pt-14 md:pb-8 m:h-20 fixed md:w-screen z-10">
                 <a href="#">ABOUT</a>
                 <a href="#projects">PROJECTS</a>
                 <a href="#flow">FLOW</a>
@@ -63,8 +63,8 @@ const Navbar = (): JSX.Element => {
                 <button onClick={ResumeToggle}><a href="#">RESUME</a></button>
                 <a href="#social">SOCIAL</a>
             </div>
-            <div id='resume' className={!isHidden ? 'hidden' : 'visible mt-16 mx-5 md:mt-36 container md:mx-40 md:w-auto z-50 absolute left-4'}>
-                <div className='flex flex-col items-center'>
+            <div id='resume' className={!isHidden ? 'hidden' : 'visible m-auto z-10 absolute left-auto flex flex-row justify-center items-center'}>
+                <div className=''>
                     {/* <iframe src={Resume} className='w-4/5 h-auto' ></iframe> */}
                     <button onClick={handleClose} className='mb-5 text-center uppercase font-bold text-3xl lightNeonBlue justify-self-end self-end'>x</button>
                     <img src={Resume} alt="image of my resume" className='md:w-4/5 h-auto' />
