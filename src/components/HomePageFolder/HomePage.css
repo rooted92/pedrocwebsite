@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Dosis&family=Fugaz+One&family=Gochi+Hand&family=Inder&family=Inter:wght@400;700&family=Jaldi&family=Manrope:wght@800&family=Nunito&family=Orelega+One&family=Philosopher&family=Poor+Story&family=Prompt&family=Quattrocento&family=Roboto:wght@300;400&family=Rubik+Dirt&family=Source+Sans+Pro&family=Space+Mono&family=Special+Elite&display=swap');
 
 .lightNeonBlue {
-    color: rgba(89, 248, 232, 1);
+  color: #59f8e8;
 }
 
 .smokeyGrayText {
-    color: rgba(201, 211, 211, 1);
+  color: rgba(201, 211, 211, 1);
 }
 
 .smokeGreyText {
@@ -13,11 +13,11 @@
 }
 
 .nunito {
-    font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .inder {
-    font-family: 'Inder', sans-serif;
+  font-family: 'Inder', sans-serif;
 }
 
 .quattroFont {
@@ -26,32 +26,85 @@
 
 /* width */
 ::-webkit-scrollbar {
-    width: .5rem;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    /* box-shadow: inset 0 0 5px rgba(3, 20, 24, 1);  */
-    background-color: rgba(3, 20, 24, 1);
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgba(3, 25, 30, 1); 
-    border-radius: .6rem;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+  width: .5rem;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px rgba(3, 20, 24, 1);  */
+  background-color: rgba(3, 20, 24, 1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(3, 25, 30, 1);
+  border-radius: .6rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {}
+
+.fadeIn {
+  animation: fading 1s ease-in
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0
   }
 
-  .fadeIn{
-    animation:fading 1s ease-in
+  50% {
+    opacity: .5
   }
-  
-  @keyframes fading{
-    0%{opacity:0}
-    50%{opacity:.5}
-    100%{opacity:1}
+
+  100% {
+    opacity: 1
   }
+}
+
+div.elegant-link a {
+  position: relative;
+  text-decoration: none;
+  /* padding-bottom: 8px; */
+}
+
+div.elegant-link a:before,
+div.elegant-link a:after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #59f8e8;
+}
+
+div.elegant-link a:before {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0s;
+}
+
+div.elegant-link a:after {
+  opacity: 0;
+  transform: translateY(4px);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0.2s;
+}
+
+div.elegant-link a:hover:before,
+div.elegant-link a:focus:before,
+div.elegant-link a:hover:after,
+div.elegant-link a:focus:after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+div.elegant-link a:hover:before,
+div.elegant-link a:focus:before {
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0.2s;
+}
+
+div.elegant-link a:hover:after,
+div.elegant-link a:focus:after {
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0s 0.2s;
+}
