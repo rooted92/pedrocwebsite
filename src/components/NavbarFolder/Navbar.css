@@ -4,13 +4,8 @@
   color: rgba(201, 211, 211, 1);
 }
 
-#nav a:hover,
-#nav button:hover {
-  /* color: rgba(89, 248, 232, 1); */
-}
-
-#navbar-hamburger a:hover {
-  /* color: rgba(89, 248, 232, 1); */
+.darkGreenBg {
+  background-color: rgba(3, 20, 24, 1);
 }
 
 .lightNeonBlue {

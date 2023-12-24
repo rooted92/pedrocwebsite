@@ -61,7 +61,7 @@ const HomePage = (): JSX.Element => {
                                     I'm <span className='text-3xl lightNeonBlue'>Pedro Castaneda</span>, seeking to enhance user experiences and drive growth at a forward-thinking company through impactful website creation.</p>
                             </div>
                             <div className='flex justify-center'>
-                                <img className='mt-4 md:mt-0 md:w-3/4 md:h-96 md:object-cover md:object-top rounded-xl lg:w-auto lg:h-72 shadow-zinc-950 shadow-lg' src={Headshot} alt="Picture of me, Pedro" />
+                                <img className='mt-4 md:mt-0 md:w-3/4 md:h-96 md:object-cover md:object-top lg:w-auto lg:h-72 border-y-2 border-teal-300' src={Headshot} alt="Picture of me, Pedro" />
                             </div>
                         </div>
 
