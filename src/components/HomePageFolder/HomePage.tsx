@@ -72,15 +72,15 @@ const HomePage = (): JSX.Element => {
                         <div className="container mx-auto w-auto px-10 smokeyGrayText">
                             {/* Project #1 */}
                             <div className="grid grid-cols-1 lg:grid-cols-2">
-                                <div className='mb-4 md:mb-0 md:h-72 flex flex-col items-center w-full'>
+                                <div className='mb-4 md:mb-0 md:h-72 flex flex-col items-center align-middle w-full'>
                                     <div className='flex md:flex-col md:items-center lg:flex-row'>
                                         <img className='h-auto w-12 md:w-24 mt-6' src={FleetFinderIcon} alt="Fleet Finder icon" />
                                         <p className='mt-4 self-center text-lg md:text-4xl'>Fleet Finder</p>
                                     </div>
-                                    <div className="grid grid-cols-2 self-start md:grid md:grid-cols-3 md:justify-items-center md:self-auto lg:grid lg:grid-cols-2 lg:self-start lg:gap-x-2 lg:justify-items-center xl:grid xl:grid-cols-2 xl:justify-items-center xl:self-center xl:gap-2">
-                                        <a href='https://fleetfinder.pedroc.dev/' target='_blank' className='text-sm mt-8 lightNeonBlue py-2'>Live Demo</a>
-                                        <a href='https://github.com/rooted92/frontendFF' target='_blank' className='text-sm mt-8 lightNeonBlue py-2'>Frontend Code</a>
-                                        <a href='https://github.com/rooted92/backendFF' target='_blank' className='cols-span-2 md:col-span-1 text-sm mt-8 lightNeonBlue py-2 lg:col-span-2'>Backend Code</a>
+                                    <div className="flex justify-between items-center space-x-6 flex-wrap">
+                                        <a href='https://fleetfinder.pedroc.dev/' target='_blank' className='text-sm mt-8 lightNeonBlue'>Live Demo</a>
+                                        <a href='https://github.com/rooted92/frontendFF' target='_blank' className='text-sm mt-8 lightNeonBlue'>Frontend Code</a>
+                                        <a href='https://github.com/rooted92/backendFF' target='_blank' className='lightNeonBlue mt-8 text-sm'>Backend Code</a>
                                     </div>
                                 </div>
                                 <div className='flex flex-col row-span-2'>
@@ -104,10 +104,8 @@ const HomePage = (): JSX.Element => {
                                 <div className='md:h-72  flex flex-col md:pt-20 items-center w-full p-2 '>
                                     <p className='brownFont text-6xl flex flex-row quattroFont'>P<img className='w-8 h-8 mt-4' src={PokeballImg} alt="pokeball" />kedex</p>
                                     <div className="grid grid-cols-2 self-center md:grid md:grid-cols-2 md:justify-items-center lg:grid lg:grid-cols-2 lg:justify-items-start lg:self-start lg:gap-x-2 xl:grid xl:grid-cols-2 xl:justify-items-center xl:self-center xl:gap-2">
-                                        <a href='https://pokedex.pedroc.dev/' target='_blank' className='text-sm mt-8 lightNeonBlue border-b border-transparent hover:border-b hover:border-teal-300 p-2'>version 2.0</a>
-                                        <a href='https://pokemonv1.pedroc.dev/' target='_blank' className='text-sm mt-8 lightNeonBlue border-b border-transparent hover:border-b hover:border-teal-300 p-2'>version 1.0</a>
-                                        <a href='https://github.com/rooted92/pokedexreact' target='_blank' className='text-sm mt-8 lightNeonBlue border-b border-transparent hover:border-b hover:border-teal-300 p-2'>v2 code</a>
-                                        <a href='https://github.com/rooted92/pokemanApi' target='_blank' className='text-sm mt-8 lightNeonBlue border-b border-transparent hover:border-b hover:border-teal-300 p-2'>v1 code</a>
+                                        <a href='https://pokedex.pedroc.dev/' target='_blank' className='text-sm mt-8 lightNeonBlue py-2'>Live Demo</a>
+                                        <a href='https://github.com/rooted92/pokedexreact' target='_blank' className='text-sm mt-8 lightNeonBlue py-2'>Frontend Code</a>
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
@@ -124,11 +122,11 @@ const HomePage = (): JSX.Element => {
                             <hr className=' border-teal-300 rounded-3xl my-6' />
                             {/* Project #3 */}
                             <div className="grid grid-cols-1 lg:grid-cols-2">
-                                <div className='min-h-72 relative flex flex-col items-center w-full md:p-2 '>
+                                <div className='min-h-72 relative flex flex-col items-center w-full md:p-2'>
                                     <img src={StarWarsLogo} className='h-44 w-auto' alt="starwars logo" />
-                                    <div className="flex flex-row space-x-2">
-                                        <a href='https://starwars.pedroc.dev/' target='_blank' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue border-b border-transparent hover:border-b hover:border-teal-300 p-2'>view website</a>
-                                        <a href='https://github.com/rooted92/starWarsApi' target='_blank' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue border-b border-transparent hover:border-b hover:border-teal-300 p-2'>view code</a>
+                                    <div className="flex flex-row space-x-6">
+                                        <a href='https://starwars.pedroc.dev/' target='_blank' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue py-2'>Live Demo</a>
+                                        <a href='https://github.com/rooted92/starWarsApi' target='_blank' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue py-2'>Frontend Code</a>
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
@@ -149,9 +147,9 @@ const HomePage = (): JSX.Element => {
                                 <div className='min-h-72 relative flex flex-col items-center w-full md:p-2 '>
                                     <p className='nunito smokeGrayText lg:text-xl mb-1'>Random Advice Generator</p>
                                     <img src={RAG} className='h-auto w-52 lg:h-44 lg:w-auto my-8 md:my-1' alt="screenshot of random advice generator" />
-                                    <div className="flex flex-row space-x-2">
-                                        <a href='https://randomadvicegen.pedroc.dev/' target='_blank' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue border-b border-transparent hover:border-b hover:border-teal-300 p-2'>view website</a>
-                                        <a href='https://github.com/rooted92/advicegeneratorv2' target='_blank' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue border-b border-transparent hover:border-b hover:border-teal-300 p-2'>view code</a>
+                                    <div className="flex flex-row space-x-6">
+                                        <a href='https://randomadvicegen.pedroc.dev/' target='_blank' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue py-2'>Live Demo</a>
+                                        <a href='https://github.com/rooted92/advicegeneratorv2' target='_blank' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue py-2'>Frontend Code</a>
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
