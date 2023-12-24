@@ -56,7 +56,7 @@ const HomePage = (): JSX.Element => {
                     <div id='about' className="container mx-10 mt-5 md:mx-24 md:mt-12 lg:mt-48 w-auto">
                         <div className="md:grid md:grid-cols-1 md:gap-y-8 lg:gap-0 lg:grid lg:grid-cols-3">
                             <div className='col-span-2 fadeIn'>
-                                <div className={`text-4xl md:text-6xl smokeyGrayText font-bold nunito ${isFaded ? 'fadeIn' : ''}`}>{greeting}</div>
+                                <h1 className={`text-4xl md:text-6xl smokeyGrayText font-bold nunito ${isFaded ? 'fadeIn' : ''}`}>{greeting}</h1>
                                 <p className='smokeGreyText w-full text-2xl'>
                                     I'm <span className='text-3xl lightNeonBlue'>Pedro Castaneda</span>, seeking to enhance user experiences and drive growth at a forward-thinking company through impactful website creation.</p>
                             </div>
@@ -68,7 +68,7 @@ const HomePage = (): JSX.Element => {
                     </div>
                     <div id='projects'></div>
                     <div className='container mt-4 md:mx-24 w-auto md:mt-10 lg:mt-32'>
-                        <p className='lightNeonBlue font-bold text-4xl mt-12 md:mb-8 nunito text-center md:text-start lg:mt-0'>Projects</p>
+                        <h2 className='lightNeonBlue font-bold text-4xl mt-12 md:mb-8 nunito text-center md:text-start lg:mt-0'>Projects</h2>
                         <div className="container mx-auto w-auto px-10 smokeyGrayText">
                             {/* Project #1 */}
                             <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -85,10 +85,10 @@ const HomePage = (): JSX.Element => {
                                 </div>
                                 <div className='flex flex-col row-span-2'>
                                     <div className='flex flex-row'>
-                                        <p className='font-bold text-xl lightNeonBlue'>Description</p>
+                                        <h3 className='font-bold text-xl lightNeonBlue'>Description</h3>
                                     </div>
                                     <p className='smokeyGrayText'>Fleet Finder streamlines communication in transportation, making it easier for truck drivers and dispatch teams to track and update the status and location of trailers.</p>
-                                    <p className='font-bold text-xl mt-3 lightNeonBlue'>Built with</p>
+                                    <h3 className='font-bold text-xl mt-3 lightNeonBlue'>Built with</h3>
                                     <div className="xl:grid xl:grid-cols-5 lg:grid lg:grid-cols-3 lg:gap-4 grid grid-cols-3 md:gap-x-8 md:gap-y-1 md:text-xs lg:text-base lg:p-4 mt-2">
                                         <IconComponent icon={ReactIcon} name='react.js' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                         <IconComponent icon={TypeScriptIcon} name='typescript' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -111,9 +111,9 @@ const HomePage = (): JSX.Element => {
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
-                                    <p className='font-bold text-xl lightNeonBlue'>Description</p>
+                                    <h3 className='font-bold text-xl lightNeonBlue'>Description</h3>
                                     <p className='smokeyGrayText'>A React.js application that enhances user experience by offering detailed Pokémon information through the Pokémon API, featuring search options, favorites management, and a user-friendly interface for Pokémon exploration.</p>
-                                    <p className='font-bold text-xl mt-3 lightNeonBlue'>Built with</p>
+                                    <h3 className='font-bold text-xl mt-3 lightNeonBlue'>Built with</h3>
                                     <div className="grid grid-cols-3 md:gap-x-8 md:text-sm lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-5 lg:p-4 mt-2">
                                         <IconComponent icon={ReactIcon} name='react.js' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                         <IconComponent icon={TypeScriptIcon} name='typescript' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -132,9 +132,9 @@ const HomePage = (): JSX.Element => {
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
-                                    <p className='font-bold text-xl lightNeonBlue'>Description</p>
+                                    <h3 className='font-bold text-xl lightNeonBlue'>Description</h3>
                                     <p className='smokeyGrayText'>This web app leverages the Star Wars API to dynamically display data from the Star Wars universe, offering user-driven search functionality, navigation through pagination, and engaging features like loading animations.</p>
-                                    <p className='font-bold text-xl mt-3 lightNeonBlue'>Built with</p>
+                                    <h3 className='font-bold text-xl mt-3 lightNeonBlue'>Built with</h3>
                                     <div className="grid grid-cols-3 md:gap-x-8 md:gap-y-1 md:text-sm lg:grid lg:grid-cols-4 lg:gap-x-4 xl:grid xl:grid-cols-5 lg:p-4 mt-2">
                                         <IconComponent icon={HTMLIcon} name='html' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                         <IconComponent icon={CSSIcon} name='css' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -155,9 +155,9 @@ const HomePage = (): JSX.Element => {
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
-                                    <p className='font-bold text-xl lightNeonBlue'>Description</p>
+                                    <h3 className='font-bold text-xl lightNeonBlue'>Description</h3>
                                     <p className='smokeyGrayText'>An app that employs the adviceslip API to provide random advice at the click of a button, offering a dynamic and user-engaging experience with a design that mirrors the meticulous style of Frontmentor.</p>
-                                    <p className='font-bold text-xl mt-3 lightNeonBlue'>Built with</p>
+                                    <h3 className='font-bold text-xl mt-3 lightNeonBlue'>Built with</h3>
                                     <div className="grid grid-cols-3 md:gap-x-8 md:gap-y-1 md:text-sm lg:grid lg:grid-cols-4 lg:gap-x-4 xl:grid xl:grid-cols-5 lg:p-4 mt-2">
                                         <IconComponent icon={ReactIcon} name='react.js' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                         <IconComponent icon={BootstrapIcon} name='bootstrap' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -169,10 +169,10 @@ const HomePage = (): JSX.Element => {
                     </div>
                     <div id='flow'></div>
                     <div className='container mx-10 md:mx-24 w-auto md:mt-10 lg:mt-28 smokeyGrayText'>
-                        <p className='lightNeonBlue font-bold text-4xl mb-4 md:mb-8 nunito text-center md:text-start'>Work Flow</p>
+                        <h2 className='lightNeonBlue font-bold text-4xl mb-4 md:mb-8 nunito text-center md:text-start'>Work Flow</h2>
                         <div className='grid grid-cols-1 md:grid-cols-2'>
                             <div className="flex flex-col items-center">
-                                <p className='smokeGreyText nunito font-bold text-2xl mb-3 md:mb-0 md:text-3xl lg:text-5xl'>Development</p>
+                                <h3 className='smokeGreyText nunito font-bold text-2xl mb-3 md:mb-0 md:text-3xl lg:text-5xl'>Development</h3>
                                 <div className='gap-4 grid grid-cols-3 md:gap-2 lg:grid lg:grid-cols-3 lg:gap-4 xl:grid xl:grid-cols-4 xl:gap-8 md:mt-8 lg:mt-14'>
                                     <IconComponent icon={HTMLIcon} name='html' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={CSSIcon} name='css' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -185,7 +185,7 @@ const HomePage = (): JSX.Element => {
                                 </div>
                             </div>
                             <div className='flex flex-col items-center'>
-                                <p className='smokeGreyText nunito font-bold text-2xl mb-3 md:mb-0 mt-4 md:mt-0 md:text-3xl lg:text-5xl'>Productivity</p>
+                                <h3 className='smokeGreyText nunito font-bold text-2xl mb-3 md:mb-0 mt-4 md:mt-0 md:text-3xl lg:text-5xl'>Productivity</h3>
                                 <div className='grid grid-cols-3 gap-4 md:gap-2 lg:grid lg:grid-cols-3 lg:gap-4 xl:grid xl:grid-cols-4 xl:gap-8 md:mt-8 lg:mt-14'>
                                     <IconComponent icon={VSCodeIcon} name='vs code' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={GitHubIcon} name='github' iconClasses='h-auto w-8 lg:w-14 self-center' />

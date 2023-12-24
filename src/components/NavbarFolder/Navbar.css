@@ -1,68 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Dosis&family=Fugaz+One&family=Gochi+Hand&family=Inder&family=Inter:wght@400;700&family=Jaldi&family=Manrope:wght@800&family=Nunito&family=Orelega+One&family=Philosopher&family=Poor+Story&family=Prompt&family=Quattrocento&family=Roboto:wght@300;400&family=Rubik+Dirt&family=Source+Sans+Pro&family=Space+Mono&family=Special+Elite&display=swap');
 
 .smokeyGrayText {
-    color: rgba(201, 211, 211, 1);
+  color: rgba(201, 211, 211, 1);
 }
 
 #nav a:hover,
 #nav button:hover {
-    /* color: rgba(89, 248, 232, 1); */
+  /* color: rgba(89, 248, 232, 1); */
 }
 
 #navbar-hamburger a:hover {
-    /* color: rgba(89, 248, 232, 1); */
+  /* color: rgba(89, 248, 232, 1); */
 }
 
 .lightNeonBlue {
-    color: rgba(89, 248, 232, 1);
+  color: rgba(89, 248, 232, 1);
 }
 
-#nav a {
-    font-size: 20px;
-    position: relative;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding-bottom: 8px;
-  }
-  
- #nav a:before,
- #nav a:after {
-    content: '';
-    position: absolute;
-    bottom: 2px;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background-color: rgba(89, 248, 232, 1);
-  }
-  
- #nav a:before {
-    opacity: 0;
-    transform: translateY(-8px);
-    transition: transform 0s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0s;
-  }
-  
- #nav a:after {
-    opacity: 0;
-    transform: translateY(4px);
-    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0.2s;
-  }
-  
- #nav a:hover:before,
- #nav a:focus:before,
- #nav a:hover:after,
- #nav a:focus:after {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
- #nav a:hover:before,
- #nav a:focus:before {
-    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0.2s;
-  }
-  
- #nav a:hover:after,
- #nav a:focus:after {
-    transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0s 0.2s;
-  }
-  
+#nav a,
+#nav button {
+  font-size: 20px;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+
+#nav a:before,
+#nav a:after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: rgba(89, 248, 232, 1);
+}
+
+#nav a:before {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0s;
+}
+
+#nav a:after {
+  opacity: 0;
+  transform: translateY(4px);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0.2s;
+}
+
+#nav a:hover:before,
+#nav a:focus:before,
+#nav a:hover:after,
+#nav a:focus:after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#nav a:hover:before,
+#nav a:focus:before {
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0.2s;
+}
+
+#nav a:hover:after,
+#nav a:focus:after {
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0s 0.2s;
+}
+
+#resume img {
+  max-width: 60rem;
+  height: auto;
+}

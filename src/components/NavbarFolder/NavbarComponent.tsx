@@ -1,23 +1,37 @@
 import './Navbar.css';
 import Resume from '../../assets/PedroC-resume.png';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Navbar = (): JSX.Element => {
 
     const [isHidden, setIsHidden] = useState<boolean>(false);
     const [show, setShow] = useState<boolean>(false);
+    const [scrolled, setScrolled] = useState<boolean>(false);
 
-    const ResumeToggle = () => {
+    const ResumeToggle = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
         setIsHidden(!isHidden);
-    }
+        !isHidden ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
+    };
 
     const HamburgerMenuToggle = () => {
         setShow(!show);
-    }
+    };
 
     const handleClose = () => {
         setIsHidden(false);
-    }
+        document.body.style.overflow = 'auto';
+    };
+
+    const handleScroll = () => {
+        const offset = window.scrollY;
+        offset > 0 ? setScrolled(true) : setScrolled(false);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
         <>
@@ -60,14 +74,16 @@ const Navbar = (): JSX.Element => {
                 <a href="#projects">PROJECTS</a>
                 <a href="#flow">FLOW</a>
                 <a href="#contact">CONTACT</a>
-                <button onClick={ResumeToggle}><a href="#">RESUME</a></button>
+                <a href="#" onClick={ResumeToggle}>RESUME</a>
                 <a href="#social">SOCIAL</a>
             </div>
-            <div id='resume' className={!isHidden ? 'hidden' : 'visible z-10 absolute'}>
-                <div className='flex flex-row-reverse mt-12 justify-between'>
-                    {/* <iframe src={Resume} className='w-4/5 h-auto' ></iframe> */}
+
+            <div className={`${isHidden ? 'block' : 'hidden'} fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10`} onClick={handleClose}></div>
+
+            <div id='resume' className={!isHidden ? 'hidden' : 'visible z-20 relative bg-black h-screen w-screen'}>
+                <div className='flex flex-row-reverse mt-12 justify-center gap-4 absolute left-1/4'>
                     <button onClick={handleClose} className='mb-5 text-center uppercase font-bold text-3xl lightNeonBlue self-start'>x</button>
-                    <img src={Resume} alt="image of my resume" className='md:w-4/5 h-auto' />
+                    <img src={Resume} alt="image of my resume" />
                 </div>
             </div>
         </>
