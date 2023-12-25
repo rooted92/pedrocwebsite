@@ -35,7 +35,7 @@ const Navbar = (): JSX.Element => {
 
     return (
         <>
-            <nav className="lg:invisible ">
+            <nav className="lg:invisible">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="#" className="flex items-center">
                         
@@ -69,7 +69,7 @@ const Navbar = (): JSX.Element => {
                 </div>
             </nav>
 
-            <div id='nav' className="invisible lg:visible smokeyGrayText flex w-full pb-2 pt-10 space-x-2 px-2 text-xs justify-around md:text-base lg:space-x-20 lg:px-28 md:pt-14 md:pb-8 m:h-20 fixed md:w-screen z-10">
+            <div id='nav' className={`${scrolled ? 'darkGreenBgNav' : ''} invisible lg:visible smokeyGrayText flex w-full pb-2 pt-10 space-x-2 px-2 text-xs justify-around md:text-base lg:space-x-20 lg:px-28 md:pt-14 md:pb-8 m:h-20 fixed md:w-screen z-10`}>
                 <a href="#">ABOUT</a>
                 <a href="#projects">PROJECTS</a>
                 <a href="#flow">FLOW</a>

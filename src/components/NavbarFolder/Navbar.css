@@ -4,8 +4,8 @@
   color: rgba(201, 211, 211, 1);
 }
 
-.darkGreenBg {
-  background-color: rgba(3, 20, 24, 1);
+.darkGreenBgNav {
+  background-color: rgba(3, 20, 24, 0.85);
 }
 
 .lightNeonBlue {
