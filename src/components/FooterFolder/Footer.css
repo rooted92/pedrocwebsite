@@ -1,60 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Dosis&family=Fugaz+One&family=Gochi+Hand&family=Inder&family=Inter:wght@400;700&family=Jaldi&family=Manrope:wght@800&family=Nunito&family=Orelega+One&family=Philosopher&family=Poor+Story&family=Prompt&family=Quattrocento&family=Roboto:wght@300;400&family=Rubik+Dirt&family=Source+Sans+Pro&family=Space+Mono&family=Special+Elite&display=swap');
 
 .lightNeonBlue {
-    color: rgba(89, 248, 232, 1);
+  color: rgba(89, 248, 232, 1);
 }
 
 .darkGreenBg {
-    background-color: rgba(3, 20, 24, 1);
+  background-color: rgba(3, 20, 24, 1);
 }
 
 footer p {
-    padding-bottom: 8px;
+  padding-bottom: 8px;
 }
 
 footer.elegant-link a {
-    position: relative;
-    text-decoration: none;
-    padding-bottom: 8px;
-  }
-  
-  footer.elegant-link a:before,
-  footer.elegant-link a:after {
-    content: '';
-    position: absolute;
-    bottom: 2px;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background-color: #59f8e8;
-  }
-  
-  footer.elegant-link a:before {
-    opacity: 0;
-    transform: translateY(-8px);
-    transition: transform 0s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0s;
-  }
-  
-  footer.elegant-link a:after {
-    opacity: 0;
-    transform: translateY(4px);
-    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0.2s;
-  }
-  
-  footer.elegant-link a:hover:before,
-  footer.elegant-link a:focus:before,
-  footer.elegant-link a:hover:after,
-  footer.elegant-link a:focus:after {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  footer.elegant-link a:hover:before,
-  footer.elegant-link a:focus:before {
-    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0.2s;
-  }
-  
-  footer.elegant-link a:hover:after,
-  footer.elegant-link a:focus:after {
-    transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0s 0.2s;
-  }
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+
+footer.elegant-link a:before,
+footer.elegant-link a:after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #59f8e8;
+}
+
+footer.elegant-link a:before {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0s;
+}
+
+footer.elegant-link a:after {
+  opacity: 0;
+  transform: translateY(4px);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0.2s;
+}
+
+footer.elegant-link a:hover:before,
+footer.elegant-link a:focus:before,
+footer.elegant-link a:hover:after,
+footer.elegant-link a:focus:after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer.elegant-link a:hover:before,
+footer.elegant-link a:focus:before {
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0.2s;
+}
+
+footer.elegant-link a:hover:after,
+footer.elegant-link a:focus:after {
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0s 0.2s;
+}

@@ -71,7 +71,7 @@ const HomePage = (): JSX.Element => {
                         <h2 className='lightNeonBlue font-bold text-4xl mt-12 md:mb-8 nunito text-center md:text-start lg:mt-0'>Projects</h2>
                         <div className="container mx-auto w-auto px-10 smokeyGrayText">
                             {/* Project #1 */}
-                            <div className="grid grid-cols-1 lg:grid-cols-2">
+                            <section className="grid grid-cols-1 lg:grid-cols-2">
                                 <div className='mb-4 md:mb-0 md:h-72 flex flex-col items-center align-middle w-full'>
                                     <div className='flex md:flex-col md:items-center lg:flex-row'>
                                         <img className='h-auto w-12 md:w-24 mt-6' src={FleetFinderIcon} alt="Fleet Finder icon" />
@@ -97,10 +97,10 @@ const HomePage = (): JSX.Element => {
                                         <IconComponent icon={AzureIcon} name='azure' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     </div>
                                 </div>
-                            </div>
+                            </section>
                             <hr className=' border-teal-300 rounded-3xl my-6' />
                             {/* Project #2 */}
-                            <div className="grid grid-cols-1 lg:grid-cols-2">
+                            <section className="grid grid-cols-1 lg:grid-cols-2">
                                 <div className='md:h-72  flex flex-col md:pt-20 items-center w-full p-2 '>
                                     <p className='brownFont text-6xl flex flex-row quattroFont'>P<img className='w-8 h-8 mt-4' src={PokeballImg} alt="pokeball" />kedex</p>
                                     <div className="grid grid-cols-2 self-center md:grid md:grid-cols-2 md:justify-items-center lg:grid lg:grid-cols-2 lg:justify-items-start lg:self-start lg:gap-x-2 xl:grid xl:grid-cols-2 xl:justify-items-center xl:self-center xl:gap-2">
@@ -118,10 +118,10 @@ const HomePage = (): JSX.Element => {
                                         <IconComponent icon={TailwindIcon} name='tailwind' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     </div>
                                 </div>
-                            </div>
+                            </section>
                             <hr className=' border-teal-300 rounded-3xl my-6' />
                             {/* Project #3 */}
-                            <div className="grid grid-cols-1 lg:grid-cols-2">
+                            <section className="grid grid-cols-1 lg:grid-cols-2">
                                 <div className='min-h-72 relative flex flex-col items-center w-full md:p-2'>
                                     <img src={StarWarsLogo} className='h-44 w-auto' alt="starwars logo" />
                                     <div className="flex flex-row space-x-6">
@@ -140,10 +140,10 @@ const HomePage = (): JSX.Element => {
                                         <IconComponent icon={BootstrapIcon} name='bootstrap' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     </div>
                                 </div>
-                            </div>
+                            </section>
                             <hr className=' border-teal-300 rounded-3xl my-6' />
                             {/* Project #4 */}
-                            <div className="grid grid-cols-1 lg:grid-cols-2">
+                            <section className="grid grid-cols-1 lg:grid-cols-2">
                                 <div className='min-h-72 relative flex flex-col items-center w-full md:p-2 '>
                                     <p className='nunito smokeGrayText lg:text-xl mb-1'>Random Advice Generator</p>
                                     <img src={RAG} className='h-auto w-52 lg:h-44 lg:w-auto my-8 md:my-1' alt="screenshot of random advice generator" />
@@ -161,7 +161,7 @@ const HomePage = (): JSX.Element => {
                                         <IconComponent icon={BootstrapIcon} name='bootstrap' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     </div>
                                 </div>
-                            </div>
+                            </section>
                             <hr className=' border-teal-300 rounded-3xl my-6' />
                         </div>
                     </div>
