@@ -78,9 +78,9 @@ const HomePage = (): JSX.Element => {
                                         <p className='mt-4 self-center text-lg md:text-4xl'>Fleet Finder</p>
                                     </div>
                                     <div className="flex justify-between items-center space-x-6 flex-wrap">
-                                        <a href='https://fleetfinder.pedroc.dev/' target='_blank' className='text-sm mt-8 lightNeonBlue'>Live Demo</a>
-                                        <a href='https://github.com/rooted92/frontendFF' target='_blank' className='text-sm mt-8 lightNeonBlue'>Frontend Code</a>
-                                        <a href='https://github.com/rooted92/backendFF' target='_blank' className='lightNeonBlue mt-8 text-sm'>Backend Code</a>
+                                        <a href='https://fleetfinder.pedroc.dev/' target='_blank' className='text-sm mt-8 lightNeonBlue py-2'>Live Demo</a>
+                                        <a href='https://github.com/rooted92/frontendFF' target='_blank' className='text-sm mt-8 lightNeonBlue py-2'>Frontend Code</a>
+                                        <a href='https://github.com/rooted92/backendFF' target='_blank' className='lightNeonBlue mt-8 py-2 text-sm'>Backend Code</a>
                                     </div>
                                 </div>
                                 <div className='flex flex-col row-span-2'>
