@@ -60,7 +60,7 @@ const Navbar = (): JSX.Element => {
                                 <a onClick={HamburgerMenuToggle} href="#contact" className="block py-2 pl-3 pr-4">CONTACT</a>
                             </li>
                             <li>
-                                <a onClick={(e) => {HamburgerMenuToggle(); ResumeToggle(e); }} className="block py-2 pl-3 pr-4">RESUME</a>
+                                <a onClick={(e) => { HamburgerMenuToggle(); ResumeToggle(e); }} className="block py-2 pl-3 pr-4">RESUME</a>
                             </li>
                             <li>
                                 <a onClick={HamburgerMenuToggle} href="#social" className="block py-2 pl-3 pr-4">SOCIAL</a>
@@ -82,8 +82,9 @@ const Navbar = (): JSX.Element => {
             <div className={`${isHidden ? 'flex' : 'hidden'} fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40`} onClick={handleClose}>
                 <div id='resume' className='w-full h-full overflow-y-auto p-4'>
                     <div className='flex flex-col items-center'>
-                        <button onClick={handleClose} className='mb-5 text-center uppercase font-bold text-3xl lightNeonBlue self-end'>
-
+                        <button onClick={handleClose} className='mb-5 lightNeonBlue self-end close-icon'>
+                            <div className="close-icon-line"></div>
+                            <div className="close-icon-line"></div>
                         </button>
                         <img src={Resume} alt="Pedro's Resume" className='max-w-full h-auto' />
                     </div>
