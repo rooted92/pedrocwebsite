@@ -82,7 +82,7 @@ const Navbar = (): JSX.Element => {
             <div className={`${isHidden ? 'flex' : 'hidden'} fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40`} onClick={handleClose}>
                 <div id='resume' className='w-full h-full overflow-y-auto p-4'>
                     <div className='flex flex-col items-center'>
-                        <button onClick={handleClose} className='mb-5 lightNeonBlue self-end close-icon'>
+                        <button onClick={handleClose} className='mb-5 self-end close-icon'>
                             <div className="close-icon-line"></div>
                             <div className="close-icon-line"></div>
                         </button>

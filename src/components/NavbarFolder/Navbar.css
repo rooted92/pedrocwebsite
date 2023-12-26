@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Dosis&family=Fugaz+One&family=Gochi+Hand&family=Inder&family=Inter:wght@400;700&family=Jaldi&family=Manrope:wght@800&family=Nunito&family=Orelega+One&family=Philosopher&family=Poor+Story&family=Prompt&family=Quattrocento&family=Roboto:wght@300;400&family=Rubik+Dirt&family=Source+Sans+Pro&family=Space+Mono&family=Special+Elite&display=swap');
 
+:root {
+  --light-neon-blue: #59f8e8;
+}
+
 .smokeyGrayText {
   color: rgba(201, 211, 211, 1);
 }
@@ -72,51 +76,46 @@
   width: 30px;
   height: 30px;
   position: relative;
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.3s ease;
 }
 
 .close-icon-line {
   position: absolute;
-  left: 14px;
-  top: 5px;
-  width: 2px;
-  height: 20px;
-  background: #fff;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  background: var(--light-neon-blue);
   transition: transform 0.3s ease;
 }
 
 .close-icon-line:first-child {
-  transform: rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .close-icon-line:last-child {
-  transform: rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.close-icon:hover .close-icon-line:first-child {
-  transform: rotate(-45deg) translateX(-5px);
-}
-
-.close-icon:hover .close-icon-line:last-child {
-  transform: rotate(-45deg) translateX(5px);
-}
-
-.close-icon:hover .close-icon-line:last-child:before {
+/* Circle */
+.close-icon::before {
   content: '';
   position: absolute;
-  width: 15px;
-  height: 2px;
-  background: #fff;
-  top: 9px;
-  left: -12px;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  transform: translate(-50%, -50%);
 }
 
-.close-icon:hover .close-icon-line:last-child:after {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 2px;
-  background: #fff;
-  top: 9px;
-  left: -12px;
-  transform: rotate(45deg);
+/* Show circle on hover */
+.close-icon:hover::before {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
