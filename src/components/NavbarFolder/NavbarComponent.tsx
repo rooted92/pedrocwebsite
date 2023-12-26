@@ -38,7 +38,7 @@ const Navbar = (): JSX.Element => {
             <nav className="lg:invisible">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="#" className="flex items-center">
-                        
+
                     </a>
                     <button onClick={HamburgerMenuToggle} data-collapse-toggle="navbar-hamburger" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
                         <span className="sr-only">Open main menu</span>
@@ -50,19 +50,19 @@ const Navbar = (): JSX.Element => {
                                 <a onClick={HamburgerMenuToggle} href="#" className="block py-2 pl-3 pr-4">ABOUT</a>
                             </li>
                             <li>
-                                <a onClick={HamburgerMenuToggle}  href="#projects" className="block py-2 pl-3 pr-4">PROJECTS</a>
+                                <a onClick={HamburgerMenuToggle} href="#projects" className="block py-2 pl-3 pr-4">PROJECTS</a>
                             </li>
                             <li>
-                                <a onClick={HamburgerMenuToggle}  href="#flow" className="block py-2 pl-3 pr-4">FLOW</a>
+                                <a onClick={HamburgerMenuToggle} href="#flow" className="block py-2 pl-3 pr-4">FLOW</a>
                             </li>
                             <li>
-                                <a onClick={HamburgerMenuToggle}  href="#contact" className="block py-2 pl-3 pr-4">CONTACT</a>
+                                <a onClick={HamburgerMenuToggle} href="#contact" className="block py-2 pl-3 pr-4">CONTACT</a>
                             </li>
                             <li>
-                                    <a onClick={HamburgerMenuToggle}  href="../../assets/PedroC-resume.png" className="block py-2 pl-3 pr-4">RESUME</a>
+                                <a onClick={(e) => {HamburgerMenuToggle(); ResumeToggle(e); }} className="block py-2 pl-3 pr-4">RESUME</a>
                             </li>
                             <li>
-                                <a onClick={HamburgerMenuToggle}  href="#social" className="block py-2 pl-3 pr-4">SOCIAL</a>
+                                <a onClick={HamburgerMenuToggle} href="#social" className="block py-2 pl-3 pr-4">SOCIAL</a>
                             </li>
                         </ul>
                     </div>
@@ -78,14 +78,16 @@ const Navbar = (): JSX.Element => {
                 <a href="#social">SOCIAL</a>
             </div>
 
-            <div className={`${isHidden ? 'block' : 'hidden'} fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10`} onClick={handleClose}></div>
-
-            <div id='resume' className={!isHidden ? 'hidden' : 'visible z-20 relative bg-black h-screen w-screen'}>
-                <div className='flex flex-row-reverse mt-12 justify-center gap-4 absolute left-1/4'>
-                    <button onClick={handleClose} className='mb-5 text-center uppercase font-bold text-3xl lightNeonBlue self-start'>x</button>
-                    <img src={Resume} alt="image of my resume" />
+            <div className={`${isHidden ? 'block' : 'hidden'} fixed top-0 left-0 lg:w-full lg:h-full bg-black bg-opacity-50 z-10`} onClick={handleClose}>
+                <div id='resume' className={!isHidden ? 'hidden' : 'visible z-20 pt-8'}>
+                    <div className='flex flex-row-reverse justify-center items-center gap-4'>
+                        <button onClick={handleClose} className='mb-5 text-center uppercase font-bold text-3xl lightNeonBlue self-start'>x</button>
+                        <img src={Resume} alt="image of my resume" className='h-auto w-3/4'/>
+                    </div>
                 </div>
             </div>
+
+
         </>
     )
 }
