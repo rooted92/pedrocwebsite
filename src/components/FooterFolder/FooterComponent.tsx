@@ -20,11 +20,11 @@ const Footer = (): JSX.Element => {
                         <div id='social' className='flex flex-col mb-6 md:mb-0 md:items-center'>
                             <h3 className='font-bold text-xl'>Social</h3>
                             <div className='grid grid-cols-2 gap-x-12'>
-                                <a href='https://www.linkedin.com/in/pedro-castaneda-developer/' target='_blank' className='lightNeonBlue text-start '>LinkedIn</a>
-                                <img className='h-4 w-auto justify-self-end self-center' src={LinkedInIcon} alt="linkedin icon" />
-                                <a href='https://github.com/rooted92' target='_blank' className='lightNeonBlue '>GitHub</a>
+                                <a href='https://www.linkedin.com/in/pedro-castaneda-developer/' rel='noreferrer' target='_blank' className='lightNeonBlue text-start '>LinkedIn</a>
+                                <img className='h-4 w-auto justify-self-end self-center'src={LinkedInIcon} alt="linkedin icon" />
+                                <a href='https://github.com/rooted92' target='_blank' rel='noreferrer' className='lightNeonBlue '>GitHub</a>
                                 <img className='h-4 w-auto justify-self-end self-center' src={GitHubIcon} alt="github icon" />
-                                <a href='https://www.codewars.com/users/rooted92' target='_blank' className='lightNeonBlue '>Codewars</a>
+                                <a href='https://www.codewars.com/users/rooted92' target='_blank' rel='noreferrer' className='lightNeonBlue '>Codewars</a>
                                 <img className='h-4 w-auto justify-self-end self-center' src={CodewarsIcon} alt="codewars icon" />
                             </div>
                         </div>

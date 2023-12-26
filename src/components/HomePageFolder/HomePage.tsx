@@ -41,7 +41,7 @@ const HomePage = (): JSX.Element => {
             setIsFaded(true);
         }, 3500);
         return () => clearInterval(greetingRandomizer);
-    }, []);
+    });
 
     useEffect(() => {
         const removeFade = setTimeout(() => setIsFaded(false), 1000);
@@ -61,7 +61,7 @@ const HomePage = (): JSX.Element => {
                                     I'm <span className='text-3xl lightNeonBlue'>Pedro Castaneda</span>, seeking to enhance user experiences and drive growth at a forward-thinking company through impactful website creation.</p>
                             </div>
                             <div className='flex justify-center'>
-                                <img className='mt-4 md:mt-0 md:w-3/4 md:h-96 md:object-cover md:object-top lg:w-auto lg:h-72 border-y-2 border-teal-300' src={Headshot} alt="Picture of me, Pedro" />
+                                <img className='mt-4 md:mt-0 md:w-3/4 md:h-96 md:object-cover md:object-top lg:w-auto lg:h-72 border-y-2 border-teal-300' src={Headshot} alt="Pedro Castaneda" />
                             </div>
                         </div>
 
@@ -78,9 +78,9 @@ const HomePage = (): JSX.Element => {
                                         <p className='mt-4 self-center text-lg md:text-4xl'>Fleet Finder</p>
                                     </div>
                                     <div className="flex justify-between items-center space-x-6 flex-wrap">
-                                        <a href='https://fleetfinder.pedroc.dev/' target='_blank' className='text-sm mt-8 lightNeonBlue py-2'>Live Demo</a>
-                                        <a href='https://github.com/rooted92/frontendFF' target='_blank' className='text-sm mt-8 lightNeonBlue py-2'>Frontend Code</a>
-                                        <a href='https://github.com/rooted92/backendFF' target='_blank' className='lightNeonBlue mt-8 py-2 text-sm'>Backend Code</a>
+                                        <a href='https://fleetfinder.pedroc.dev/' target='_blank' rel='noreferrer' className='text-sm mt-8 lightNeonBlue py-2'>Live Demo</a>
+                                        <a href='https://github.com/rooted92/frontendFF' target='_blank' rel='noreferrer' className='text-sm mt-8 lightNeonBlue py-2'>Frontend Code</a>
+                                        <a href='https://github.com/rooted92/backendFF' target='_blank' rel='noreferrer' className='lightNeonBlue mt-8 py-2 text-sm'>Backend Code</a>
                                     </div>
                                 </div>
                                 <div className='flex flex-col row-span-2'>
@@ -104,8 +104,8 @@ const HomePage = (): JSX.Element => {
                                 <div className='md:h-72  flex flex-col md:pt-20 items-center w-full p-2 '>
                                     <p className='brownFont text-6xl flex flex-row quattroFont'>P<img className='w-8 h-8 mt-4' src={PokeballImg} alt="pokeball" />kedex</p>
                                     <div className="grid grid-cols-2 self-center md:grid md:grid-cols-2 md:justify-items-center lg:grid lg:grid-cols-2 lg:justify-items-start lg:self-start lg:gap-x-2 xl:grid xl:grid-cols-2 xl:justify-items-center xl:self-center xl:gap-2">
-                                        <a href='https://pokedex.pedroc.dev/' target='_blank' className='text-sm mt-8 lightNeonBlue py-2'>Live Demo</a>
-                                        <a href='https://github.com/rooted92/pokedexreact' target='_blank' className='text-sm mt-8 lightNeonBlue py-2'>Frontend Code</a>
+                                        <a href='https://pokedex.pedroc.dev/' target='_blank' rel='noreferrer' className='text-sm mt-8 lightNeonBlue py-2'>Live Demo</a>
+                                        <a href='https://github.com/rooted92/pokedexreact' target='_blank' rel='noreferrer' className='text-sm mt-8 lightNeonBlue py-2'>Frontend Code</a>
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
@@ -125,8 +125,8 @@ const HomePage = (): JSX.Element => {
                                 <div className='min-h-72 relative flex flex-col items-center w-full md:p-2'>
                                     <img src={StarWarsLogo} className='h-44 w-auto' alt="starwars logo" />
                                     <div className="flex flex-row space-x-6">
-                                        <a href='https://starwars.pedroc.dev/' target='_blank' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue py-2'>Live Demo</a>
-                                        <a href='https://github.com/rooted92/starWarsApi' target='_blank' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue py-2'>Frontend Code</a>
+                                        <a href='https://starwars.pedroc.dev/' target='_blank' rel='noreferrer' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue py-2'>Live Demo</a>
+                                        <a href='https://github.com/rooted92/starWarsApi' target='_blank' rel='noreferrer' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue py-2'>Frontend Code</a>
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
@@ -148,8 +148,8 @@ const HomePage = (): JSX.Element => {
                                     <p className='nunito smokeGrayText lg:text-xl mb-1'>Random Advice Generator</p>
                                     <img src={RAG} className='h-auto w-52 lg:h-44 lg:w-auto my-8 md:my-1' alt="screenshot of random advice generator" />
                                     <div className="flex flex-row space-x-6">
-                                        <a href='https://randomadvicegen.pedroc.dev/' target='_blank' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue py-2'>Live Demo</a>
-                                        <a href='https://github.com/rooted92/advicegeneratorv2' target='_blank' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue py-2'>Frontend Code</a>
+                                        <a href='https://randomadvicegen.pedroc.dev/' target='_blank' rel='noreferrer' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue py-2'>Live Demo</a>
+                                        <a href='https://github.com/rooted92/advicegeneratorv2' target='_blank' rel='noreferrer' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue py-2'>Frontend Code</a>
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
