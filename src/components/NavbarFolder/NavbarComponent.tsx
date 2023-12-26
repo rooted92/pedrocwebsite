@@ -2,6 +2,7 @@ import './Navbar.css';
 import Resume from '../../assets/PedroC-resume.png';
 import { useEffect, useState } from 'react';
 
+
 const Navbar = (): JSX.Element => {
 
     const [isHidden, setIsHidden] = useState<boolean>(false);
@@ -78,11 +79,13 @@ const Navbar = (): JSX.Element => {
                 <a href="#social">SOCIAL</a>
             </div>
 
-            <div className={`${isHidden ? 'block' : 'hidden'} fixed top-0 left-0 lg:w-full lg:h-full bg-black bg-opacity-50 z-10`} onClick={handleClose}>
-                <div id='resume' className={!isHidden ? 'hidden' : 'visible z-20 pt-8'}>
-                    <div className='flex flex-row-reverse justify-center items-center gap-4'>
-                        <button onClick={handleClose} className='mb-5 text-center uppercase font-bold text-3xl lightNeonBlue self-start'>x</button>
-                        <img src={Resume} alt="image of my resume" className='h-auto w-3/4'/>
+            <div className={`${isHidden ? 'flex' : 'hidden'} fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40`} onClick={handleClose}>
+                <div id='resume' className='w-full h-full overflow-y-auto p-4'>
+                    <div className='flex flex-col items-center'>
+                        <button onClick={handleClose} className='mb-5 text-center uppercase font-bold text-3xl lightNeonBlue self-end'>
+
+                        </button>
+                        <img src={Resume} alt="Pedro's Resume" className='max-w-full h-auto' />
                     </div>
                 </div>
             </div>
