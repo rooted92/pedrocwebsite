@@ -12,14 +12,6 @@
   color: var(--phosphor-color);
 }
 
-.darkGreenBgContainer {
-  background-color: rgba(3, 20, 24, .3);
-}
-
-.smokeyGrayText {
-  color: rgba(201, 211, 211, 1);
-}
-
 .smokeGreyText {
   color: rgba(174, 180, 187, 1);
 }
@@ -46,6 +38,10 @@
 
 .ibm-plex-mono {
   font-family: var(--ibm-plex-mono);
+}
+
+.phosphorous {
+  color: var(--phosphor-color);
 }
 
 /* width */

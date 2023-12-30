@@ -9,7 +9,7 @@
 }
 
 .darkGreenBgNav {
-  background-color: rgba(3, 20, 24, 0.95);
+  background-color: rgba(0, 4, 2, .8);
 }
 
 .lightNeonBlue {
@@ -33,7 +33,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background-color: rgba(89, 248, 232, 1);
+  background-color: var(--phosphor-color);
 }
 
 #nav a:before {
@@ -87,7 +87,7 @@
   top: 50%;
   width: 20px;
   height: 2px;
-  background: var(--light-neon-blue);
+  background: var(--phosphor-color);
   transition: transform 0.3s ease;
 }
 

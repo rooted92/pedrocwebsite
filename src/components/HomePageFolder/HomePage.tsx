@@ -166,11 +166,11 @@ const HomePage = (): JSX.Element => {
                         </div>
                     </div>
                     <div id='flow'></div>
-                    <div className='container mx-10 md:mx-24 w-auto md:mt-10 lg:mt-28 p-8 smokeyGrayText border border-teal-300 rounded-lg darkGreenBgContainer shadow-teal-300'>
-                        {/* <h2 className='lightNeonBlue font-bold text-4xl mb-4 md:mb-8 major-mono-display text-center'>Work Flow</h2> */}
+                    <div className='container mx-10 md:mx-24 w-auto md:mt-10 lg:mt-28 smokeyGrayText'>
+                        <h2 className='lightNeonBlue font-bold text-4xl mb-4 md:mb-8 major-mono-display text-center'>Work Flow</h2>
                         <div className='grid grid-cols-1 md:grid-cols-2'>
                             <div className="flex flex-col items-center">
-                                <h3 className='smokeGreyText major-mono-display font-bold text-2xl mb-3 md:mb-0 md:text-3xl lg:text-5xl'>Development</h3>
+                                <h3 className='smokeGreyText major-mono-display font-bold text-2xl mb-3 md:mb-0'>Development</h3>
                                 <div className='gap-4 grid grid-cols-3 md:gap-2 lg:grid lg:grid-cols-3 lg:gap-4 xl:grid xl:grid-cols-4 xl:gap-8 md:mt-8 lg:mt-14'>
                                     <IconComponent icon={HTMLIcon} name='html' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={CSSIcon} name='css' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -183,7 +183,7 @@ const HomePage = (): JSX.Element => {
                                 </div>
                             </div>
                             <div className='flex flex-col items-center'>
-                                <h3 className='smokeGreyText major-mono-display font-bold text-2xl mb-3 md:mb-0 mt-4 md:mt-0 md:text-3xl lg:text-5xl'>Productivity</h3>
+                                <h3 className='smokeGreyText major-mono-display font-bold text-2xl mb-3 md:mb-0 mt-4 md:mt-0'>Productivity</h3>
                                 <div className='grid grid-cols-3 gap-4 md:gap-2 lg:grid lg:grid-cols-3 lg:gap-4 xl:grid xl:grid-cols-4 xl:gap-8 md:mt-8 lg:mt-14'>
                                     <IconComponent icon={VSCodeIcon} name='vs code' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={GitHubIcon} name='github' iconClasses='h-auto w-8 lg:w-14 self-center' />
