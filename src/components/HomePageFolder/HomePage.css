@@ -1,7 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Dosis&family=Fugaz+One&family=Gochi+Hand&family=Inder&family=Inter:wght@400;700&family=Jaldi&family=Manrope:wght@800&family=Nunito&family=Orelega+One&family=Philosopher&family=Poor+Story&family=Prompt&family=Quattrocento&family=Roboto:wght@300;400&family=Rubik+Dirt&family=Source+Sans+Pro&family=Space+Mono&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Dosis&family=Fugaz+One&family=Gochi+Hand&family=IBM+Plex+Mono&family=Inder&family=Inter:wght@400;700&family=Jaldi&family=Major+Mono+Display&family=Manrope:wght@800&family=Nunito&family=Orelega+One&family=Philosopher&family=Poor+Story&family=Prompt&family=Quattrocento&family=Roboto:wght@300;400;700&family=Rubik+Dirt&family=Single+Day&family=Space+Mono&family=Special+Elite&display=swap');
+
+:root {
+  --light-neon-blue: #59f8e8;
+  --single-day: 'Single Day', cursive, sans-serif;
+  --major-mono-display: 'Major Mono Display', monospace;
+  --ibm-plex-mono: 'IBM Plex Mono', monospace;
+  --phosphor-color: rgb(0, 255, 51);
+}
 
 .lightNeonBlue {
-  color: #59f8e8;
+  color: var(--phosphor-color);
+}
+
+.darkGreenBgContainer {
+  background-color: rgba(3, 20, 24, .3);
 }
 
 .smokeyGrayText {
@@ -22,6 +34,18 @@
 
 .quattroFont {
   font-family: 'Quattrocento', serif;
+}
+
+.single-day {
+  font-family: var(--single-day);
+}
+
+.major-mono-display, h3 {
+  font-family: var(--major-mono-display);
+}
+
+.ibm-plex-mono {
+  font-family: var(--ibm-plex-mono);
 }
 
 /* width */

@@ -50,13 +50,13 @@ const HomePage = (): JSX.Element => {
 
     return (
         <>
-            <div id='top' className="flex flex-col h-screen inder">
+            <div id='top' className="flex flex-col h-screen ibm-plex-mono">
                 <Navbar />
                 <div className="flex-grow container mx-auto">
                     <div id='about' className="container mx-10 mt-5 md:mx-24 md:mt-12 lg:mt-48 w-auto">
                         <div className="md:grid md:grid-cols-1 md:gap-y-8 lg:gap-0 lg:grid lg:grid-cols-3">
                             <div className='col-span-2 fadeIn'>
-                                <h1 className={`text-4xl md:text-6xl smokeyGrayText font-bold nunito ${isFaded ? 'fadeIn' : ''}`}>{greeting}</h1>
+                                <h1 className={`text-4xl md:text-6xl smokeyGrayText font-bold major-mono-display ${isFaded ? 'fadeIn' : ''}`}>{greeting}</h1>
                                 <p className='smokeGreyText w-full text-2xl'>
                                     I'm <span className='text-3xl lightNeonBlue'>Pedro Castaneda</span>, seeking to enhance user experiences and drive growth at a forward-thinking company through impactful website creation.</p>
                             </div>
@@ -68,7 +68,7 @@ const HomePage = (): JSX.Element => {
                     </div>
                     <div id='projects'></div>
                     <div className='elegant-link container mt-4 md:mx-24 w-auto md:mt-10 lg:mt-32'>
-                        <h2 className='lightNeonBlue font-bold text-4xl mt-12 md:mb-8 nunito text-center md:text-start lg:mt-0'>Projects</h2>
+                        <h2 className='lightNeonBlue font-bold text-4xl mt-12 md:mb-8 major-mono-display text-center lg:mt-0'>Projects</h2>
                         <div className="container mx-auto w-auto px-10 smokeyGrayText">
                             {/* Project #1 */}
                             <section className="grid grid-cols-1 lg:grid-cols-2">
@@ -145,7 +145,7 @@ const HomePage = (): JSX.Element => {
                             {/* Project #4 */}
                             <section className="grid grid-cols-1 lg:grid-cols-2">
                                 <div className='min-h-72 relative flex flex-col items-center w-full md:p-2 '>
-                                    <p className='nunito smokeGrayText lg:text-xl mb-1'>Random Advice Generator</p>
+                                    <p className='major-mono-display smokeGrayText lg:text-xl mb-1'>Random Advice Generator</p>
                                     <img src={RAG} className='h-auto w-52 lg:h-44 lg:w-auto my-8 md:my-1' alt="screenshot of random advice generator" />
                                     <div className="flex flex-row space-x-6">
                                         <a href='https://randomadvicegen.pedroc.dev/' target='_blank' rel='noreferrer' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue py-2'>Live Demo</a>
@@ -166,11 +166,11 @@ const HomePage = (): JSX.Element => {
                         </div>
                     </div>
                     <div id='flow'></div>
-                    <div className='container mx-10 md:mx-24 w-auto md:mt-10 lg:mt-28 smokeyGrayText'>
-                        <h2 className='lightNeonBlue font-bold text-4xl mb-4 md:mb-8 nunito text-center md:text-start'>Work Flow</h2>
+                    <div className='container mx-10 md:mx-24 w-auto md:mt-10 lg:mt-28 p-8 smokeyGrayText border border-teal-300 rounded-lg darkGreenBgContainer shadow-teal-300'>
+                        {/* <h2 className='lightNeonBlue font-bold text-4xl mb-4 md:mb-8 major-mono-display text-center'>Work Flow</h2> */}
                         <div className='grid grid-cols-1 md:grid-cols-2'>
                             <div className="flex flex-col items-center">
-                                <h3 className='smokeGreyText nunito font-bold text-2xl mb-3 md:mb-0 md:text-3xl lg:text-5xl'>Development</h3>
+                                <h3 className='smokeGreyText major-mono-display font-bold text-2xl mb-3 md:mb-0 md:text-3xl lg:text-5xl'>Development</h3>
                                 <div className='gap-4 grid grid-cols-3 md:gap-2 lg:grid lg:grid-cols-3 lg:gap-4 xl:grid xl:grid-cols-4 xl:gap-8 md:mt-8 lg:mt-14'>
                                     <IconComponent icon={HTMLIcon} name='html' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={CSSIcon} name='css' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -183,7 +183,7 @@ const HomePage = (): JSX.Element => {
                                 </div>
                             </div>
                             <div className='flex flex-col items-center'>
-                                <h3 className='smokeGreyText nunito font-bold text-2xl mb-3 md:mb-0 mt-4 md:mt-0 md:text-3xl lg:text-5xl'>Productivity</h3>
+                                <h3 className='smokeGreyText major-mono-display font-bold text-2xl mb-3 md:mb-0 mt-4 md:mt-0 md:text-3xl lg:text-5xl'>Productivity</h3>
                                 <div className='grid grid-cols-3 gap-4 md:gap-2 lg:grid lg:grid-cols-3 lg:gap-4 xl:grid xl:grid-cols-4 xl:gap-8 md:mt-8 lg:mt-14'>
                                     <IconComponent icon={VSCodeIcon} name='vs code' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={GitHubIcon} name='github' iconClasses='h-auto w-8 lg:w-14 self-center' />
