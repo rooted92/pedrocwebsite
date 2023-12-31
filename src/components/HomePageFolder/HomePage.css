@@ -6,6 +6,16 @@
   --major-mono-display: 'Major Mono Display', monospace;
   --ibm-plex-mono: 'IBM Plex Mono', monospace;
   --phosphor-color: rgb(0, 255, 51);
+  --smoke-grey: rgb(174, 180, 187);
+}
+
+hr {
+  background-color: var(--smoke-grey);
+}
+
+#about img {
+  border-top: 1px solid var(--smoke-grey);
+  border-bottom: 1px solid var(--smoke-grey);
 }
 
 .lightNeonBlue {
@@ -96,7 +106,7 @@ div.elegant-link a:after {
   left: 0;
   right: 0;
   height: 4px;
-  background-color: #59f8e8;
+  background-color: var(--phosphor-color);
 }
 
 div.elegant-link a:before {

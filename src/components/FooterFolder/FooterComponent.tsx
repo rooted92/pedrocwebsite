@@ -10,7 +10,7 @@ const Footer = (): JSX.Element => {
 
     return (
         <>
-            <footer className='elegant-link darkGreenBg mt-8 border-t-2 border-teal-300 border-dotted'>
+            <footer className='elegant-link mt-8 bg-black'>
                 <div className='w-full md:h-52 mt-8 pb-8'>
                     <div className="grid grid-cols-1 md:grid-cols-3 px-20 md:px-0 smokeGreyText mt-12">
                         <div id='contact' className='flex flex-col mb-6 md:mb-0 md:items-center'>

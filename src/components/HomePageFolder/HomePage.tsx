@@ -58,13 +58,12 @@ const HomePage = (): JSX.Element => {
                             <div className='col-span-2 fadeIn'>
                                 <h1 className={`text-4xl md:text-6xl smokeyGrayText font-bold major-mono-display ${isFaded ? 'fadeIn' : ''}`}>{greeting}</h1>
                                 <p className='smokeGreyText w-full text-2xl'>
-                                    I'm <span className='text-3xl lightNeonBlue'>Pedro Castaneda</span>, seeking to enhance user experiences and drive growth at a forward-thinking company through impactful website creation.</p>
+                                    I'm <span className='text-3xl lightNeonBlue'>Pedro Castaneda</span>. DIY-er, food lover, hiker, & Software Developer. Aside from food I also love to consume API's!</p>
                             </div>
                             <div className='flex justify-center'>
-                                <img className='mt-4 md:mt-0 md:w-3/4 md:h-96 md:object-cover md:object-top lg:w-auto lg:h-72 border-y-2 border-teal-300' src={Headshot} alt="Pedro Castaneda" />
+                                <img className='mt-4 md:mt-0 md:w-3/4 md:h-96 md:object-cover md:object-top lg:w-auto lg:h-72' src={Headshot} alt="Pedro Castaneda" />
                             </div>
                         </div>
-
                     </div>
                     <div id='projects'></div>
                     <div className='elegant-link container mt-4 md:mx-24 w-auto md:mt-10 lg:mt-32'>
@@ -98,7 +97,7 @@ const HomePage = (): JSX.Element => {
                                     </div>
                                 </div>
                             </section>
-                            <hr className=' border-teal-300 rounded-3xl my-6' />
+                            <hr className='my-6' />
                             {/* Project #2 */}
                             <section className="grid grid-cols-1 lg:grid-cols-2">
                                 <div className='md:h-72  flex flex-col md:pt-20 items-center w-full p-2 '>
@@ -119,7 +118,7 @@ const HomePage = (): JSX.Element => {
                                     </div>
                                 </div>
                             </section>
-                            <hr className=' border-teal-300 rounded-3xl my-6' />
+                            <hr className='my-6' />
                             {/* Project #3 */}
                             <section className="grid grid-cols-1 lg:grid-cols-2">
                                 <div className='min-h-72 relative flex flex-col items-center w-full md:p-2'>
@@ -141,7 +140,7 @@ const HomePage = (): JSX.Element => {
                                     </div>
                                 </div>
                             </section>
-                            <hr className=' border-teal-300 rounded-3xl my-6' />
+                            <hr className='my-6' />
                             {/* Project #4 */}
                             <section className="grid grid-cols-1 lg:grid-cols-2">
                                 <div className='min-h-72 relative flex flex-col items-center w-full md:p-2 '>
@@ -162,7 +161,7 @@ const HomePage = (): JSX.Element => {
                                     </div>
                                 </div>
                             </section>
-                            <hr className=' border-teal-300 rounded-3xl my-6' />
+                            <hr className='my-6' />
                         </div>
                     </div>
                     <div id='flow'></div>
