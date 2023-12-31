@@ -18,10 +18,6 @@ hr {
   border-bottom: 1px solid var(--smoke-grey);
 }
 
-.lightNeonBlue {
-  color: var(--phosphor-color);
-}
-
 .smokeGreyText {
   color: rgba(174, 180, 187, 1);
 }

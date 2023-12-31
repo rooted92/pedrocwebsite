@@ -58,7 +58,7 @@ const HomePage = (): JSX.Element => {
                             <div className='col-span-2 fadeIn'>
                                 <h1 className={`text-4xl md:text-6xl smokeyGrayText font-bold major-mono-display ${isFaded ? 'fadeIn' : ''}`}>{greeting}</h1>
                                 <p className='smokeGreyText w-full text-2xl'>
-                                    I'm <span className='text-3xl lightNeonBlue'>Pedro Castaneda</span>. DIY-er, food lover, hiker, & Software Developer. Aside from food I also love to consume API's!</p>
+                                    I'm <span className='text-3xl phosphorous'>Pedro Castaneda</span>. DIY-er, food lover, hiker, & Software Developer. Aside from food I also &#x1F49A; to consume API's!</p>
                             </div>
                             <div className='flex justify-center'>
                                 <img className='mt-4 md:mt-0 md:w-3/4 md:h-96 md:object-cover md:object-top lg:w-auto lg:h-72' src={Headshot} alt="Pedro Castaneda" />
@@ -67,7 +67,7 @@ const HomePage = (): JSX.Element => {
                     </div>
                     <div id='projects'></div>
                     <div className='elegant-link container mt-4 md:mx-24 w-auto md:mt-10 lg:mt-32'>
-                        <h2 className='lightNeonBlue font-bold text-4xl mt-12 md:mb-8 major-mono-display text-center lg:mt-0'>Projects</h2>
+                        <h2 className='phosphorous font-bold text-4xl mt-12 md:mb-8 major-mono-display text-center lg:mt-0'>Projects</h2>
                         <div className="container mx-auto w-auto px-10 smokeyGrayText">
                             {/* Project #1 */}
                             <section className="grid grid-cols-1 lg:grid-cols-2">
@@ -77,17 +77,17 @@ const HomePage = (): JSX.Element => {
                                         <p className='mt-4 self-center text-lg md:text-4xl'>Fleet Finder</p>
                                     </div>
                                     <div className="flex justify-between items-center space-x-6 flex-wrap">
-                                        <a href='https://fleetfinder.pedroc.dev/' target='_blank' rel='noreferrer' className='text-sm mt-8 lightNeonBlue py-2'>Live Demo</a>
-                                        <a href='https://github.com/rooted92/frontendFF' target='_blank' rel='noreferrer' className='text-sm mt-8 lightNeonBlue py-2'>Frontend Code</a>
-                                        <a href='https://github.com/rooted92/backendFF' target='_blank' rel='noreferrer' className='lightNeonBlue mt-8 py-2 text-sm'>Backend Code</a>
+                                        <a href='https://fleetfinder.pedroc.dev/' target='_blank' rel='noreferrer' className='text-sm mt-8 py-2'>Live Demo</a>
+                                        <a href='https://github.com/rooted92/frontendFF' target='_blank' rel='noreferrer' className='text-sm mt-8 py-2'>Frontend Code</a>
+                                        <a href='https://github.com/rooted92/backendFF' target='_blank' rel='noreferrer' className='mt-8 py-2 text-sm'>Backend Code</a>
                                     </div>
                                 </div>
                                 <div className='flex flex-col row-span-2'>
                                     <div className='flex flex-row'>
-                                        <h3 className='font-bold text-xl lightNeonBlue'>Description</h3>
+                                        <h3 className='font-bold text-xl phosphorous'>Description</h3>
                                     </div>
                                     <p className='smokeyGrayText'>Fleet Finder streamlines communication in transportation, making it easier for truck drivers and dispatch teams to track and update the status and location of trailers.</p>
-                                    <h3 className='font-bold text-xl mt-3 lightNeonBlue'>Built with</h3>
+                                    <h3 className='font-bold text-xl mt-3 phosphorous'>Built with</h3>
                                     <div className="xl:grid xl:grid-cols-5 lg:grid lg:grid-cols-3 lg:gap-4 grid grid-cols-3 md:gap-x-8 md:gap-y-1 md:text-xs lg:text-base lg:p-4 mt-2">
                                         <IconComponent icon={ReactIcon} name='react.js' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                         <IconComponent icon={TypeScriptIcon} name='typescript' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -103,14 +103,14 @@ const HomePage = (): JSX.Element => {
                                 <div className='md:h-72  flex flex-col md:pt-20 items-center w-full p-2 '>
                                     <p className='brownFont text-6xl flex flex-row quattroFont'>P<img className='w-8 h-8 mt-4' src={PokeballImg} alt="pokeball" />kedex</p>
                                     <div className="grid grid-cols-2 self-center md:grid md:grid-cols-2 md:justify-items-center lg:grid lg:grid-cols-2 lg:justify-items-start lg:self-start lg:gap-x-2 xl:grid xl:grid-cols-2 xl:justify-items-center xl:self-center xl:gap-2">
-                                        <a href='https://pokedex.pedroc.dev/' target='_blank' rel='noreferrer' className='text-sm mt-8 lightNeonBlue py-2'>Live Demo</a>
-                                        <a href='https://github.com/rooted92/pokedexreact' target='_blank' rel='noreferrer' className='text-sm mt-8 lightNeonBlue py-2'>Frontend Code</a>
+                                        <a href='https://pokedex.pedroc.dev/' target='_blank' rel='noreferrer' className='text-sm mt-8 py-2'>Live Demo</a>
+                                        <a href='https://github.com/rooted92/pokedexreact' target='_blank' rel='noreferrer' className='text-sm mt-8 py-2'>Frontend Code</a>
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
-                                    <h3 className='font-bold text-xl lightNeonBlue'>Description</h3>
+                                    <h3 className='font-bold text-xl phosphorous'>Description</h3>
                                     <p className='smokeyGrayText'>A React.js application that enhances user experience by offering detailed Pokémon information through the Pokémon API, featuring search options, favorites management, and a user-friendly interface for Pokémon exploration.</p>
-                                    <h3 className='font-bold text-xl mt-3 lightNeonBlue'>Built with</h3>
+                                    <h3 className='font-bold text-xl mt-3 phosphorous'>Built with</h3>
                                     <div className="grid grid-cols-3 md:gap-x-8 md:text-sm lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-5 lg:p-4 mt-2">
                                         <IconComponent icon={ReactIcon} name='react.js' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                         <IconComponent icon={TypeScriptIcon} name='typescript' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -124,14 +124,14 @@ const HomePage = (): JSX.Element => {
                                 <div className='min-h-72 relative flex flex-col items-center w-full md:p-2'>
                                     <img src={StarWarsLogo} className='h-44 w-auto' alt="starwars logo" />
                                     <div className="flex flex-row space-x-6">
-                                        <a href='https://starwars.pedroc.dev/' target='_blank' rel='noreferrer' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue py-2'>Live Demo</a>
-                                        <a href='https://github.com/rooted92/starWarsApi' target='_blank' rel='noreferrer' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue py-2'>Frontend Code</a>
+                                        <a href='https://starwars.pedroc.dev/' target='_blank' rel='noreferrer' className='text-sm md:mt-2 lg:mt-8 py-2'>Live Demo</a>
+                                        <a href='https://github.com/rooted92/starWarsApi' target='_blank' rel='noreferrer' className='text-sm md:mt-2 lg:mt-8 py-2'>Frontend Code</a>
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
-                                    <h3 className='font-bold text-xl lightNeonBlue'>Description</h3>
+                                    <h3 className='font-bold text-xl phosphorous'>Description</h3>
                                     <p className='smokeyGrayText'>This web app leverages the Star Wars API to dynamically display data from the Star Wars universe, offering user-driven search functionality, navigation through pagination, and engaging features like loading animations.</p>
-                                    <h3 className='font-bold text-xl mt-3 lightNeonBlue'>Built with</h3>
+                                    <h3 className='font-bold text-xl mt-3 phosphorous'>Built with</h3>
                                     <div className="grid grid-cols-3 md:gap-x-8 md:gap-y-1 md:text-sm lg:grid lg:grid-cols-4 lg:gap-x-4 xl:grid xl:grid-cols-5 lg:p-4 mt-2">
                                         <IconComponent icon={HTMLIcon} name='html' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                         <IconComponent icon={CSSIcon} name='css' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -147,14 +147,14 @@ const HomePage = (): JSX.Element => {
                                     <p className='major-mono-display smokeGrayText lg:text-xl mb-1'>Random Advice Generator</p>
                                     <img src={RAG} className='h-auto w-52 lg:h-44 lg:w-auto my-8 md:my-1' alt="screenshot of random advice generator" />
                                     <div className="flex flex-row space-x-6">
-                                        <a href='https://randomadvicegen.pedroc.dev/' target='_blank' rel='noreferrer' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue py-2'>Live Demo</a>
-                                        <a href='https://github.com/rooted92/advicegeneratorv2' target='_blank' rel='noreferrer' className='text-sm md:mt-2 lg:mt-8 lightNeonBlue py-2'>Frontend Code</a>
+                                        <a href='https://randomadvicegen.pedroc.dev/' target='_blank' rel='noreferrer' className='text-sm md:mt-2 lg:mt-8 py-2'>Live Demo</a>
+                                        <a href='https://github.com/rooted92/advicegeneratorv2' target='_blank' rel='noreferrer' className='text-sm md:mt-2 lg:mt-8 py-2'>Frontend Code</a>
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
-                                    <h3 className='font-bold text-xl lightNeonBlue'>Description</h3>
+                                    <h3 className='font-bold text-xl phosphorous'>Description</h3>
                                     <p className='smokeyGrayText'>An app that employs the adviceslip API to provide random advice at the click of a button, offering a dynamic and user-engaging experience with a design that mirrors the meticulous style of Frontmentor.</p>
-                                    <h3 className='font-bold text-xl mt-3 lightNeonBlue'>Built with</h3>
+                                    <h3 className='font-bold text-xl mt-3 phosphorous'>Built with</h3>
                                     <div className="grid grid-cols-3 md:gap-x-8 md:gap-y-1 md:text-sm lg:grid lg:grid-cols-4 lg:gap-x-4 xl:grid xl:grid-cols-5 lg:p-4 mt-2">
                                         <IconComponent icon={ReactIcon} name='react.js' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                         <IconComponent icon={BootstrapIcon} name='bootstrap' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -166,7 +166,7 @@ const HomePage = (): JSX.Element => {
                     </div>
                     <div id='flow'></div>
                     <div className='container mx-10 md:mx-24 w-auto md:mt-10 lg:mt-28 smokeyGrayText'>
-                        <h2 className='lightNeonBlue font-bold text-4xl mb-4 md:mb-8 major-mono-display text-center'>Work Flow</h2>
+                        <h2 className='phosphorous font-bold text-4xl mb-4 md:mb-8 major-mono-display text-center'>Work Flow</h2>
                         <div className='grid grid-cols-1 md:grid-cols-2'>
                             <div className="flex flex-col items-center">
                                 <h3 className='smokeGreyText major-mono-display font-bold text-2xl mb-3 md:mb-0'>Development</h3>

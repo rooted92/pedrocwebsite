@@ -9,11 +9,7 @@
 }
 
 .darkGreenBgNav {
-  background-color: rgba(0, 4, 2, .8);
-}
-
-.lightNeonBlue {
-  color: rgba(89, 248, 232, 1);
+  background-color: #000000f1;
 }
 
 #nav a,
