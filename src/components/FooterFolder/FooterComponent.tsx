@@ -31,11 +31,11 @@ const Footer = (): JSX.Element => {
                         <div className='flex flex-col md:items-center'>
                             <h3 className='font-bold text-xl'>Portfolio Built With</h3>
                             <div className='grid grid-cols-2 gap-x-12 mt-2'>
-                                <p className='lightNeonBlue text-start'>React.js</p>
+                                <p className='phosphorous text-start'>React.js</p>
                                 <img className='h-4 w-auto justify-self-end self-center' src={ReactIcon} alt="react icon" />
-                                <p className='lightNeonBlue'>Typescript</p>
+                                <p className='phosphorous'>Typescript</p>
                                 <img className='h-4 w-auto justify-self-end self-center' src={TypescriptIcon} alt="typescript icon" />
-                                <p className='lightNeonBlue'>Tailwind</p>
+                                <p className='phosphorous'>Tailwind</p>
                                 <img className='h-4 w-auto justify-self-end self-center' src={TailwindIcon} alt="tailwind icon" />
                             </div>
                         </div>
