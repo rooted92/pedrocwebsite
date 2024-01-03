@@ -46,10 +46,10 @@ const Navbar = (): JSX.Element => {
                     <div className={`${show ? '' : 'hidden'} w-full `} id="navbar-hamburger">
                         <ul className="flex flex-col font-medium mt-4 rounded-lg smokeyGrayText darkGreenBg">
                             <li>
-                                <a onClick={HamburgerMenuToggle} href="#" className="block py-2 pl-3 pr-4">ABOUT</a>
+                                <a onClick={HamburgerMenuToggle} href="#" className="block py-2 pl-3 pr-4">about</a>
                             </li>
                             <li>
-                                <a onClick={HamburgerMenuToggle} href="#projects" className="block py-2 pl-3 pr-4">PROJECTS</a>
+                                <a onClick={HamburgerMenuToggle} href="#projects" className="block py-2 pl-3 pr-4">projects</a>
                             </li>
                             <li>
                                 <a onClick={HamburgerMenuToggle} href="#flow" className="block py-2 pl-3 pr-4">FLOW</a>
