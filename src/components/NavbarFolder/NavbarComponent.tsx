@@ -69,12 +69,12 @@ const Navbar = (): JSX.Element => {
             </nav>
 
             <div id='nav' className={`${scrolled ? 'darkGreenBgNav' : ''} invisible lg:visible smokeyGrayText flex w-full pb-2 pt-10 space-x-2 px-2 text-xs justify-around md:text-base lg:space-x-20 lg:px-28 md:pt-14 md:pb-8 m:h-20 fixed md:w-screen z-10`}>
-                <a href="#">ABOUT</a>
-                <a href="#projects">PROJECTS</a>
-                <a href="#flow">FLOW</a>
-                <a href="#contact">CONTACT</a>
-                <a href="#" onClick={ResumeToggle}>RESUME</a>
-                <a href="#social">SOCIAL</a>
+                <a href="#">.about<span className='phosphorous'>(</span><span>me</span><span className='phosphorous'>)</span></a>
+                <a href="#projects">.projects<span className='phosphorous'>(</span><span></span><span className='phosphorous'>)</span></a>
+                <a href="#flow">.flow<span className='phosphorous'>(</span><span></span><span className='phosphorous'>)</span></a>
+                <a href="#contact">.contact<span className='phosphorous'>(</span><span></span><span className='phosphorous'>)</span></a>
+                <a href="#" onClick={ResumeToggle}>.resume<span className='phosphorous'>(</span><span></span><span className='phosphorous'>)</span></a>
+                <a href="#social">.social<span className='phosphorous'>(</span><span></span><span className='phosphorous'>)</span></a>
             </div>
 
             <div className={`${isHidden ? 'flex' : 'hidden'} fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40`} onClick={handleClose}>

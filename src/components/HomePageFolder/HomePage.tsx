@@ -52,6 +52,7 @@ const HomePage = (): JSX.Element => {
         <>
             <div id='top' className="flex flex-col h-screen ibm-plex-mono">
                 <Navbar />
+                
                 <div className="flex-grow container mx-auto">
                     <div id='about' className="container mx-10 mt-5 md:mx-24 md:mt-12 lg:mt-48 w-auto">
                         <div className="md:grid md:grid-cols-1 md:gap-y-8 lg:gap-0 lg:grid lg:grid-cols-3">
