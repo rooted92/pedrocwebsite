@@ -46,22 +46,22 @@ const Navbar = (): JSX.Element => {
                     <div className={`${show ? '' : 'hidden'} w-full `} id="navbar-hamburger">
                         <ul className="flex flex-col font-medium mt-4 rounded-lg smokeyGrayText darkGreenBg">
                             <li>
-                                <a onClick={HamburgerMenuToggle} href="#" className="block py-2 pl-3 pr-4">about</a>
+                                <a onClick={HamburgerMenuToggle} href="#" className="block py-2 pl-3 pr-4">.about<span className='phosphorous'>(</span><span className='phosphorous'>)</span></a>
                             </li>
                             <li>
-                                <a onClick={HamburgerMenuToggle} href="#projects" className="block py-2 pl-3 pr-4">projects</a>
+                                <a onClick={HamburgerMenuToggle} href="#projects" className="block py-2 pl-3 pr-4">.projects<span className='phosphorous'>(</span><span className='phosphorous'>)</span></a>
                             </li>
                             <li>
-                                <a onClick={HamburgerMenuToggle} href="#flow" className="block py-2 pl-3 pr-4">FLOW</a>
+                                <a onClick={HamburgerMenuToggle} href="#flow" className="block py-2 pl-3 pr-4">.flow<span className='phosphorous'>(</span><span className='phosphorous'>)</span></a>
                             </li>
                             <li>
-                                <a onClick={HamburgerMenuToggle} href="#contact" className="block py-2 pl-3 pr-4">CONTACT</a>
+                                <a onClick={HamburgerMenuToggle} href="#contact" className="block py-2 pl-3 pr-4">.contact<span className='phosphorous'>(</span><span className='phosphorous'>)</span></a>
                             </li>
                             <li>
-                                <a onClick={(e) => { HamburgerMenuToggle(); ResumeToggle(e); }} className="block py-2 pl-3 pr-4">RESUME</a>
+                                <a onClick={(e) => { HamburgerMenuToggle(); ResumeToggle(e); }} className="block py-2 pl-3 pr-4">.resume<span className='phosphorous'>(</span><span className='phosphorous'>)</span></a>
                             </li>
                             <li>
-                                <a onClick={HamburgerMenuToggle} href="#social" className="block py-2 pl-3 pr-4">SOCIAL</a>
+                                <a onClick={HamburgerMenuToggle} href="#social" className="block py-2 pl-3 pr-4">.social<span className='phosphorous'>(</span><span className='phosphorous'>)</span></a>
                             </li>
                         </ul>
                     </div>
@@ -69,12 +69,12 @@ const Navbar = (): JSX.Element => {
             </nav>
 
             <div id='nav' className={`${scrolled ? 'darkGreenBgNav' : ''} invisible lg:visible smokeyGrayText flex w-full pb-2 pt-10 space-x-2 px-2 text-xs justify-around md:text-base lg:space-x-20 lg:px-28 md:pt-14 md:pb-8 m:h-20 fixed md:w-screen z-10`}>
-                <a href="#">.about<span className='phosphorous'>(</span><span>me</span><span className='phosphorous'>)</span></a>
-                <a href="#projects">.projects<span className='phosphorous'>(</span><span></span><span className='phosphorous'>)</span></a>
-                <a href="#flow">.flow<span className='phosphorous'>(</span><span></span><span className='phosphorous'>)</span></a>
-                <a href="#contact">.contact<span className='phosphorous'>(</span><span></span><span className='phosphorous'>)</span></a>
-                <a href="#" onClick={ResumeToggle}>.resume<span className='phosphorous'>(</span><span></span><span className='phosphorous'>)</span></a>
-                <a href="#social">.social<span className='phosphorous'>(</span><span></span><span className='phosphorous'>)</span></a>
+                <a href="#" className='function-name'>.about<span className='phosphorous'>(</span><span className='argument'>me</span><span className='r-parenthesis phosphorous'>)</span></a>
+                <a href="#projects" className='function-name'>.portfolio<span className='phosphorous'>(</span><span className='argument'>projects</span><span className='r-parenthesis-projects phosphorous'>)</span></a>
+                <a href="#flow" className='function-name'>.work<span className='phosphorous'>(</span><span className='argument'>flow</span><span className='r-parenthesis-flow phosphorous'>)</span></a>
+                <a href="#contact" className='function-name'>.contact<span className='phosphorous'>(</span><span className='argument'>me</span><span className='r-parenthesis phosphorous'>)</span></a>
+                <a href="#" onClick={ResumeToggle} className='function-name'>.resume<span className='phosphorous'>(</span><span className='argument'>modal</span><span className='r-parenthesis-modal phosphorous'>)</span></a>
+                <a href="#social" className='function-name'>.social<span className='phosphorous'>(</span><span className='argument'>links</span><span className='r-parenthesis-links phosphorous'>)</span></a>
             </div>
 
             <div className={`${isHidden ? 'flex' : 'hidden'} fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40`} onClick={handleClose}>

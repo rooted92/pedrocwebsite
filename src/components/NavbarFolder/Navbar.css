@@ -12,6 +12,70 @@
   background-color: #000000f1;
 }
 
+.function-name {
+  position: relative;
+}
+
+.function-name .argument {
+  opacity: 0;
+  transition: .1s ease-in;
+}
+
+.function-name:hover .argument {
+  opacity: 1;
+  transition: .1s ease-in .4s;
+}
+
+.function-name .r-parenthesis {
+  position: absolute;
+  transform: translateX(-1.5rem);
+  transition: .4s ease-out .2s;
+}
+
+.function-name:hover .r-parenthesis {
+  transform: translateX(0);
+}
+
+.function-name .r-parenthesis-flow {
+  position: absolute;
+  transform: translateX(-3rem);
+  transition: .4s ease-out .2s;
+}
+
+.function-name:hover .r-parenthesis-flow {
+  transform: translateX(0);
+}
+
+.function-name .r-parenthesis-modal {
+  position: absolute;
+  transform: translateX(-3em);
+  transition: .4s ease-out .2s;
+}
+
+.function-name:hover .r-parenthesis-modal {
+  transform: translateX(0);
+}
+
+.function-name .r-parenthesis-links {
+  position: absolute;
+  transform: translateX(-3em);
+  transition: .4s ease-out .2s;
+}
+
+.function-name:hover .r-parenthesis-links {
+  transform: translateX(0);
+}
+
+.function-name .r-parenthesis-projects {
+  position: absolute;
+  transform: translateX(-4.8em);
+  transition: .4s ease-out .2s;
+}
+
+.function-name:hover .r-parenthesis-projects {
+  transform: translateX(0);
+}
+
 #nav a,
 #nav button {
   font-size: 20px;
