@@ -76,6 +76,10 @@
   transform: translateX(0);
 }
 
+/* #nav a {
+  margin: 0 auto;
+} */
+
 #nav a,
 #nav button {
   font-size: 20px;
