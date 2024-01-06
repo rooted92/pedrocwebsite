@@ -69,11 +69,11 @@ const Navbar = (): JSX.Element => {
             </nav>
 
             <div id='nav' className={`${scrolled ? 'darkGreenBgNav' : ''} invisible lg:visible smokeyGrayText w-full pb-2 pt-10 px-24 fixed md:w-screen z-10 grid grid-cols-3 xl:grid-cols-6`}>
-                <a href="#" className='function-name place-self-center'>.about<span className='phosphorous'>(</span><span className='argument'>me</span><span className='r-parenthesis phosphorous'>)</span></a>
-                <a href="#projects" className='function-name place-self-center'>.portfolio<span className='phosphorous'>(</span><span className='argument'>projects</span><span className='r-parenthesis-projects phosphorous'>)</span></a>
-                <a href="#flow" className='function-name place-self-center'>.work<span className='phosphorous'>(</span><span className='argument'>flow</span><span className='r-parenthesis-flow phosphorous'>)</span></a>
-                <a href="#contact" className='function-name place-self-center'>.contact<span className='phosphorous'>(</span><span className='argument'>me</span><span className='r-parenthesis phosphorous'>)</span></a>
-                <a href="#" onClick={ResumeToggle} className='function-name place-self-center'>.resume<span className='phosphorous'>(</span><span className='argument'>modal</span><span className='r-parenthesis-modal phosphorous'>)</span></a>
+                <a href="#" className='function-name place-self-center mr-6'>.about<span className='phosphorous'>(</span><span className='argument'>me</span><span className='r-parenthesis phosphorous'>)</span></a>
+                <a href="#projects" className='function-name place-self-center ml-10' aria-label='View portfolio projects'>.projects<span className='phosphorous'>(</span><span className='argument'>list</span><span className='r-parenthesis-projects phosphorous'>)</span></a>
+                <a href="#flow" className='function-name place-self-center mr-9'>.work<span className='phosphorous'>(</span><span className='argument'>flow</span><span className='r-parenthesis-flow phosphorous'>)</span></a>
+                <a href="#contact" className='function-name place-self-center'>.contact<span className='phosphorous'>(</span><span className='argument'>email</span><span className='r-parenthesis-email phosphorous'>)</span></a>
+                <a href="#" onClick={ResumeToggle} className='function-name place-self-center mr-8'>.resume<span className='phosphorous'>(</span><span className='argument'>modal</span><span className='r-parenthesis-modal phosphorous'>)</span></a>
                 <a href="#social" className='function-name place-self-center'>.social<span className='phosphorous'>(</span><span className='argument'>links</span><span className='r-parenthesis-links phosphorous'>)</span></a>
             </div>
 

@@ -68,11 +68,21 @@
 
 .function-name .r-parenthesis-projects {
   position: absolute;
-  transform: translateX(-4.8em);
+  transform: translateX(-2.4em);
   transition: .4s ease-out .2s;
 }
 
 .function-name:hover .r-parenthesis-projects {
+  transform: translateX(0);
+}
+
+.function-name .r-parenthesis-email {
+  position: absolute;
+  transform: translateX(-3em);
+  transition: .4s ease-out .2s;
+}
+
+.function-name:hover .r-parenthesis-email {
   transform: translateX(0);
 }
 
