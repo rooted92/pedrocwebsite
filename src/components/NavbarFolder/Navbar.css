@@ -14,6 +14,13 @@
 
 .function-name {
   position: relative;
+  text-align: center;
+  transition: all .4s ease-out;
+}
+
+.function-name:hover,
+.function-name:focus {
+  flex-grow: 1;
 }
 
 .function-name .argument {
@@ -86,9 +93,9 @@
   transform: translateX(0);
 }
 
-/* #nav a {
+#nav {
   margin: 0 auto;
-} */
+}
 
 #nav a,
 #nav button {
@@ -150,4 +157,31 @@
   width: 30px;
   height: 30px;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Handle Nav Item Container width at various screen sizes */
+
+@media screen and (min-width: 1024px) {
+  .nav-items-container {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .nav-items-container {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .nav-items-container{
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .nav-items-container {
+    width: 50%;
+  }
 }
