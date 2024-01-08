@@ -21,9 +21,12 @@ import PostmanIcon from '../../assets/postman-logo-glyph.png';
 import JiraIcon from '../../assets/jira.svg';
 import FigmaIcon from '../../assets/figma.svg';
 import CodewarsIcon from '../../assets/nav_codewars.svg';
-import NotionIcon from '../../assets/letter-n.svg';
+import NotionIcon from '../../assets/notion.svg';
 import SlackIcon from '../../assets/slack.svg';
 import RAG from '../../assets/randomadvicegen.png';
+import WordPressIcon from '../../assets/wordpress_icon.png';
+import PHPIcon from '../../assets/php_icon.png';
+import WrikeIcon from '../../assets/wrike.svg';
 
 import './HomePage.css';
 
@@ -166,6 +169,7 @@ const HomePage = (): JSX.Element => {
                         </div>
                     </div>
                     <div id='flow'></div>
+                    {/* TODO: AND ECTS?REEE JS to fileter 3DS icons and projects? */}
                     <div className='container mx-10 md:mx-24 w-auto md:mt-10 lg:mt-28 smokeyGrayText'>
                         <h2 className='phosphorous font-bold text-4xl mb-4 md:mb-8 major-mono-display text-center'>Work Flow</h2>
                         <div className='grid grid-cols-1 md:grid-cols-2'>
@@ -180,6 +184,8 @@ const HomePage = (): JSX.Element => {
                                     <IconComponent icon={ReactIcon} name='react.js' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={TailwindIcon} name='tailwind' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={BootstrapIcon} name='bootstrap' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                    <IconComponent icon={WordPressIcon} name='wordpress' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                    <IconComponent icon={PHPIcon} name='php' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                 </div>
                             </div>
                             <div className='flex flex-col items-center'>
@@ -194,6 +200,7 @@ const HomePage = (): JSX.Element => {
                                     <IconComponent icon={CodewarsIcon} name='codewars' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={NotionIcon} name='notion' iconClasses='h-auto bg-slate-100 w-8 lg:w-14 self-center rounded-2xl' />
                                     <IconComponent icon={SlackIcon} name='slack' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                    <IconComponent icon={WrikeIcon} name='wrike' iconClasses='h-auto w-8 lg:w-14 self-center rounded-2xl' />
                                 </div>
                             </div>
                         </div>
