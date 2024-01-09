@@ -1,6 +1,6 @@
 import './Footer.css';
 import LinkedInIcon from '../../assets/linkedin.svg';
-import GitHubIcon from '../../assets/github.svg';
+import GitHubIcon from '../../assets/github-icon.svg';
 import CodewarsIcon from '../../assets/nav_codewars.svg';
 import ReactIcon from '../../assets/atom.svg';
 import TypescriptIcon from '../../assets/typescript.svg';

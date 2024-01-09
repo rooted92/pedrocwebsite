@@ -16,7 +16,7 @@ import HTMLIcon from '../../assets/html-5.svg';
 import CSSIcon from '../../assets/css-3.svg';
 import JavascriptIcon from '../../assets/js.svg';
 import VSCodeIcon from '../../assets/vs-code-logo-transp.png';
-import GitHubIcon from '../../assets/github.svg'
+import GitHubIcon from '../../assets/github-icon.svg'
 import PostmanIcon from '../../assets/postman-logo-glyph.png';
 import JiraIcon from '../../assets/jira.svg';
 import FigmaIcon from '../../assets/figma.svg';
@@ -27,6 +27,7 @@ import RAG from '../../assets/randomadvicegen.png';
 import WordPressIcon from '../../assets/wordpress_icon.png';
 import PHPIcon from '../../assets/php_icon.png';
 import WrikeIcon from '../../assets/wrike.svg';
+import GitIcon from '../../assets/git.svg';
 
 import './HomePage.css';
 
@@ -138,7 +139,7 @@ const HomePage = (): JSX.Element => {
                                     <div className="grid grid-cols-3 md:gap-x-8 md:gap-y-1 md:text-sm lg:grid lg:grid-cols-4 lg:gap-x-4 xl:grid xl:grid-cols-5 lg:p-4 mt-2">
                                         <IconComponent icon={HTMLIcon} name='html' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                         <IconComponent icon={CSSIcon} name='css' iconClasses='h-auto w-8 lg:w-14 self-center' />
-                                        <IconComponent icon={JavascriptIcon} name='javascript' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                        <IconComponent icon={JavascriptIcon} name='javascript' iconClasses='h-auto w-8 lg:w-14 self-center rounded' />
                                         <IconComponent icon={BootstrapIcon} name='bootstrap' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     </div>
                                 </div>
@@ -177,7 +178,7 @@ const HomePage = (): JSX.Element => {
                                 <div className='gap-4 grid grid-cols-3 md:gap-2 lg:grid lg:grid-cols-3 lg:gap-4 xl:grid xl:grid-cols-4 xl:gap-8 md:mt-8 lg:mt-14'>
                                     <IconComponent icon={HTMLIcon} name='html' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={CSSIcon} name='css' iconClasses='h-auto w-8 lg:w-14 self-center' />
-                                    <IconComponent icon={JavascriptIcon} name='javascript' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                    <IconComponent icon={JavascriptIcon} name='javascript' iconClasses='h-auto w-8 lg:w-14 self-center rounded' />
                                     <IconComponent icon={TypeScriptIcon} name='typescript' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={CSharp} name='c-sharp' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={ReactIcon} name='react.js' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -185,6 +186,7 @@ const HomePage = (): JSX.Element => {
                                     <IconComponent icon={BootstrapIcon} name='bootstrap' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={WordPressIcon} name='wordpress' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={PHPIcon} name='php' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                    <IconComponent icon={GitIcon} name='git' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                 </div>
                             </div>
                             <div className='flex flex-col items-center'>
@@ -197,9 +199,9 @@ const HomePage = (): JSX.Element => {
                                     <IconComponent icon={JiraIcon} name='jira' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={FigmaIcon} name='figma' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={CodewarsIcon} name='codewars' iconClasses='h-auto w-8 lg:w-14 self-center' />
-                                    <IconComponent icon={NotionIcon} name='notion' iconClasses='h-auto bg-slate-100 w-8 lg:w-14 self-center rounded-2xl' />
+                                    <IconComponent icon={NotionIcon} name='notion' iconClasses='h-auto bg-slate-100 w-8 lg:w-14 self-center rounded' />
                                     <IconComponent icon={SlackIcon} name='slack' iconClasses='h-auto w-8 lg:w-14 self-center' />
-                                    <IconComponent icon={WrikeIcon} name='wrike' iconClasses='h-auto w-8 lg:w-14 self-center rounded-2xl' />
+                                    <IconComponent icon={WrikeIcon} name='wrike' iconClasses='h-auto w-8 lg:w-14 self-center rounded' />
                                 </div>
                             </div>
                         </div>
