@@ -1,25 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Dosis&family=Fugaz+One&family=Gochi+Hand&family=IBM+Plex+Mono&family=Inder&family=Inter:wght@400;700&family=Jaldi&family=Major+Mono+Display&family=Manrope:wght@800&family=Nunito&family=Orelega+One&family=Philosopher&family=Poor+Story&family=Prompt&family=Quattrocento&family=Roboto:wght@300;400;700&family=Rubik+Dirt&family=Single+Day&family=Space+Mono&family=Special+Elite&display=swap');
 
-:root {
-  --light-neon-blue: #59f8e8;
-  --single-day: 'Single Day', cursive, sans-serif;
-  --major-mono-display: 'Major Mono Display', monospace;
-  --ibm-plex-mono: 'IBM Plex Mono', monospace;
-  --phosphor-color: rgb(0, 255, 51);
-  --smoke-grey: rgb(174, 180, 187);
-}
-
 hr {
-  background-color: var(--smoke-grey);
+  background-color: var(--primary-font-color);
 }
 
 #about img {
-  border-top: 1px solid var(--smoke-grey);
-  border-bottom: 1px solid var(--smoke-grey);
+  border-top: 1px solid var(--primary-font-color);
+  border-bottom: 1px solid var(--primary-font-color);
 }
 
-.smokeGreyText {
-  color: rgba(174, 180, 187, 1);
+.primary-font-color {
+  color: var(--primary-font-color);
 }
 
 .nunito {
@@ -38,7 +29,8 @@ hr {
   font-family: var(--single-day);
 }
 
-.major-mono-display, h3 {
+.major-mono-display,
+h3 {
   font-family: var(--major-mono-display);
 }
 
@@ -46,8 +38,8 @@ hr {
   font-family: var(--ibm-plex-mono);
 }
 
-.phosphorous {
-  color: var(--phosphor-color);
+.secondary-font-color {
+  color: var(--secondary-font-color);
 }
 
 /* width */
@@ -102,7 +94,7 @@ div.elegant-link a:after {
   left: 0;
   right: 0;
   height: 4px;
-  background-color: var(--phosphor-color);
+  background-color: var(--secondary-font-color);
 }
 
 div.elegant-link a:before {
