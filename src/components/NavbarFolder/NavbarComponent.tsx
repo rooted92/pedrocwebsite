@@ -1,6 +1,8 @@
 import './Navbar.css';
 import Resume from '../../assets/PedroC-resume.png';
 import { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon } from '@fortawesome/free-solid-svg-icons';
 
 
 const Navbar = (): JSX.Element => {
@@ -37,6 +39,9 @@ const Navbar = (): JSX.Element => {
     return (
         <>
             <nav className="lg:hidden">
+                <div>
+                    <FontAwesomeIcon icon={faMoon} style={{ color: "#00ff33", }} />
+                </div>
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <div className="flex items-center"></div>
                     <button onClick={HamburgerMenuToggle} data-collapse-toggle="navbar-hamburger" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
@@ -69,13 +74,18 @@ const Navbar = (): JSX.Element => {
             </nav>
 
             <nav id='nav' className={`${scrolled ? 'nav-bg-color' : ''} invisible lg:visible w-full primary-font-color pb-2 pt-10 fixed z-10`}>
-                <div className='nav-items-container flex justify-center mx-auto'>
-                    <a href="#about" className='function-name text-center'>.about<span className='secondary-font-color'>(</span><span className='argument'>me</span><span className='r-parenthesis secondary-font-color'>)</span></a>
-                    <a href="#projects" className='function-name place-self-center' aria-label='View portfolio projects'>.projects<span className='secondary-font-color'>(</span><span className='argument'>list</span><span className='r-parenthesis-projects secondary-font-color'>)</span></a>
-                    <a href="#flow" className='function-name place-self-center'>.work<span className='secondary-font-color'>(</span><span className='argument'>flow</span><span className='r-parenthesis-flow secondary-font-color'>)</span></a>
-                    <a href="#contact" className='function-name self-center'>.contact<span className='secondary-font-color'>(</span><span className='argument'>email</span><span className='r-parenthesis-email secondary-font-color'>)</span></a>
-                    <a href="#" onClick={ResumeToggle} className='function-name place-self-center'>.resume<span className='secondary-font-color'>(</span><span className='argument'>modal</span><span className='r-parenthesis-modal secondary-font-color'>)</span></a>
-                    <a href="#social" className='function-name place-self-center'>.social<span className='secondary-font-color'>(</span><span className='argument'>links</span><span className='r-parenthesis-links secondary-font-color'>)</span></a>
+                <div className="relative flex h-full w-full">
+                    <button className='ml-8 absolute bottom-6'>
+                        mode <FontAwesomeIcon icon={faMoon} style={{color: "#aeb4bb",}} />
+                    </button>
+                    <div className='nav-items-container flex justify-center mx-auto'>
+                        <a href="#about" className='function-name text-center'>.about<span className='secondary-font-color'>(</span><span className='argument'>me</span><span className='r-parenthesis secondary-font-color'>)</span></a>
+                        <a href="#projects" className='function-name place-self-center' aria-label='View portfolio projects'>.projects<span className='secondary-font-color'>(</span><span className='argument'>list</span><span className='r-parenthesis-projects secondary-font-color'>)</span></a>
+                        <a href="#flow" className='function-name place-self-center'>.work<span className='secondary-font-color'>(</span><span className='argument'>flow</span><span className='r-parenthesis-flow secondary-font-color'>)</span></a>
+                        <a href="#contact" className='function-name self-center'>.contact<span className='secondary-font-color'>(</span><span className='argument'>email</span><span className='r-parenthesis-email secondary-font-color'>)</span></a>
+                        <a href="#" onClick={ResumeToggle} className='function-name place-self-center'>.resume<span className='secondary-font-color'>(</span><span className='argument'>modal</span><span className='r-parenthesis-modal secondary-font-color'>)</span></a>
+                        <a href="#social" className='function-name place-self-center'>.social<span className='secondary-font-color'>(</span><span className='argument'>links</span><span className='r-parenthesis-links secondary-font-color'>)</span></a>
+                    </div>
                 </div>
             </nav>
 

@@ -10,6 +10,25 @@
   --primary-font-color: rgb(174, 180, 187);
 }
 
+.dark-mode {
+  --nav-bg-color: #000000f1;
+  --major-mono-display: 'Major Mono Display', monospace;
+  --ibm-plex-mono: 'IBM Plex Mono', monospace;
+  --secondary-font-color: rgb(0, 255, 51);
+  --primary-font-color: rgb(174, 180, 187);
+
+}
+
+.light-mode {
+  --nav-bg-color: #ffffff;
+  --light-neon-blue: #59f8e8;
+  --single-day: 'Single Day', cursive, sans-serif;
+  --major-mono-display: 'Major Mono Display', monospace;
+  --ibm-plex-mono: 'IBM Plex Mono', monospace;
+  --secondary-font-color: rgb(0, 255, 51);
+  --primary-font-color: rgb(174, 180, 187);
+}
+
 /* makes sizing simpler */
 *,
 *::before,

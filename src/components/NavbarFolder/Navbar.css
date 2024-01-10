@@ -122,7 +122,7 @@
   top: 50%;
   width: 20px;
   height: 2px;
-  background: var(--phosphor-color);
+  background: var(--secondary-font-color);
   transition: transform 0.3s ease;
 }
 
