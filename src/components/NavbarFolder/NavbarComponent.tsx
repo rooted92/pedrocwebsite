@@ -12,17 +12,17 @@ const Navbar = (): JSX.Element => {
     const [show, setShow] = useState<boolean>(false);
     const [scrolled, setScrolled] = useState<boolean>(false);
 
-    const [theme, setTheme] = useState('darkTheme');
+    const [theme, setTheme] = useState('dark-mode');
     const body = document.body;
     body.classList.add(theme);
 
     const handleThemeToggle = () => {
-        if (theme === 'darkTheme') {
+        if (theme === 'dark-mode') {
             body.classList.remove(theme);
-            setTheme('lightTheme');
+            setTheme('light-mode');
         } else {
             body.classList.remove(theme);
-            setTheme('darkTheme');
+            setTheme('dark-mode');
         }
     }
 
@@ -54,9 +54,9 @@ const Navbar = (): JSX.Element => {
     return (
         <>
             <nav className="lg:hidden">
-                <div>
+                <button>
                     <FontAwesomeIcon icon={faMoon} style={{ color: "#00ff33", }} />
-                </div>
+                </button>
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <div className="flex items-center"></div>
                     <button onClick={HamburgerMenuToggle} data-collapse-toggle="navbar-hamburger" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
@@ -90,7 +90,9 @@ const Navbar = (): JSX.Element => {
 
             <nav id='nav' className={`${scrolled ? 'nav-bg-color' : ''} invisible lg:visible w-full primary-font-color pb-2 pt-10 fixed z-10`}>
                 <div className="relative flex h-full w-full">
-                    <button className='ml-8 absolute bottom-6'>
+                    <button
+                        className='ml-8 absolute bottom-6 hover:scale-105 transform transition-all duration-200 ease-linear'
+                        onClick={handleThemeToggle}>
                         mode <FontAwesomeIcon icon={faMoon} style={{color: "#aeb4bb",}} /> <FontAwesomeIcon icon={faSun} style={{color: "#aeb4bb",}} />
                     </button>
                     <div className='nav-items-container flex justify-center mx-auto'>

@@ -2,6 +2,7 @@
 
 footer {
   border-top: 1px solid var(--primary-font-color);
+  background-color: var(--footer-bg-color);
 }
 
 footer p {
@@ -22,7 +23,7 @@ footer.elegant-link a:after {
   left: 0;
   right: 0;
   height: 4px;
-  background-color: var(--phosphor-color);
+  background-color: var(--link-color);
 }
 
 footer.elegant-link a:before {

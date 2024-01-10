@@ -3,27 +3,37 @@
 :root {
   --body-bg-color: rgb(0, 0, 9);
   --nav-bg-color: #000000f1;
+  --footer-bg-color: #000;
   --light-neon-blue: #59f8e8;
   --single-day: 'Single Day', cursive, sans-serif;
   --major-mono-display: 'Major Mono Display', monospace;
   --ibm-plex-mono: 'IBM Plex Mono', monospace;
   --secondary-font-color: rgb(0, 255, 51);
   --primary-font-color: rgb(174, 180, 187);
+  --link-color: rgb(0, 255, 51);
+  --primary-border-color: rgb(174, 180, 187);
 }
 
 .dark-mode {
   --body-bg-color: rgb(0, 0, 9);
-  --nav-bg-color: #000000f1;
+  --nav-bg-color: rgba(0, 0, 0, 0.945);
+  --footer-bg-color: #000;
   --secondary-font-color: rgb(0, 255, 51);
   --primary-font-color: rgb(174, 180, 187);
-
+  --link-color: rgb(0, 255, 51);
+  --primary-border-color: rgb(174, 180, 187);
+  transition: all 0.5s linear;
 }
 
 .light-mode {
-  --body-bg-color: rgb(255, 255, 255);
-  --nav-bg-color: #ffffff;
-  --secondary-font-color: rgb(0, 255, 51);
-  --primary-font-color: rgb(174, 180, 187);
+  --body-bg-color: #ffffff;
+  --nav-bg-color: rgba(245, 243, 244, 0.945);
+  --footer-bg-color: #f5f3f4;
+  --secondary-font-color: #d00000;
+  --primary-font-color: #161a1d;
+  --link-color: #d00000;
+  --primary-border-color: #fff;
+  transition: all 0.5s linear;
 }
 
 /* makes sizing simpler */
@@ -85,6 +95,6 @@ li {
   /* smooth scrolling */
   :has(:target) {
     scroll-behavior: smooth;
-    scroll-padding-top: 5.5rem;
+    scroll-padding-top: 6rem;
   }
 }

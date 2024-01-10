@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Dosis&family=Fugaz+One&family=Gochi+Hand&family=IBM+Plex+Mono&family=Inder&family=Inter:wght@400;700&family=Jaldi&family=Major+Mono+Display&family=Manrope:wght@800&family=Nunito&family=Orelega+One&family=Philosopher&family=Poor+Story&family=Prompt&family=Quattrocento&family=Roboto:wght@300;400;700&family=Rubik+Dirt&family=Single+Day&family=Space+Mono&family=Special+Elite&display=swap');
 
 hr {
-  background-color: var(--primary-font-color);
+  background-color: var(--primary-border-color);
 }
 
 #about img {
-  border-top: 1px solid var(--primary-font-color);
-  border-bottom: 1px solid var(--primary-font-color);
+  border-top: 1px solid var(--primary-border-color);
+  border-bottom: 1px solid var(--primary-border-color);
 }
 
 .primary-font-color {
@@ -94,7 +94,7 @@ div.elegant-link a:after {
   left: 0;
   right: 0;
   height: 4px;
-  background-color: var(--secondary-font-color);
+  background-color: var(--link-color);
 }
 
 div.elegant-link a:before {
