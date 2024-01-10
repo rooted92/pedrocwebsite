@@ -61,7 +61,7 @@ const HomePage = (): JSX.Element => {
                         <div className="grid grid-cols-1 gap-y-8 lg:gap-0 lg:grid-cols-2">
                             <div className='fadeIn'>
                                 <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold major-mono-display ${isFaded ? 'fadeIn' : ''}`}>{greeting}</h1>
-                                <p className='w-full text-2xl text-justify'>
+                                <p className='w-full text-2xl'>
                                     I'm <span className='text-3xl secondary-font-color'>Pedro Castaneda</span>. DIY-er, food lover, hiker, & Software Developer. Aside from food I also &#x1F49A; to consume API's!</p>
                             </div>
                             <div className='flex justify-center'>
