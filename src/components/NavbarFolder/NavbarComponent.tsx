@@ -60,7 +60,7 @@ const Navbar = (): JSX.Element => {
                 <button
                     className='absolute left-4 top-4 hover:scale-105 transform transition-all duration-200 ease-linear'
                     onClick={handleThemeToggle}>
-                    <FontAwesomeIcon icon={faMoon} style={{ color: "#00ff33", }} /> <FontAwesomeIcon icon={faSun} style={{ color: "#ff6d00", }} />
+                    <FontAwesomeIcon icon={faMoon} style={{ color: isDark ? "#00ff33" : "#495057" }} /> <FontAwesomeIcon icon={faSun} style={{ color: !isDark ? "#ff6d00" : "#495057" }} />
                 </button>
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <div className="flex items-center"></div>
