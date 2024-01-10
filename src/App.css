@@ -10,7 +10,7 @@
   --ibm-plex-mono: 'IBM Plex Mono', monospace;
   --secondary-font-color: rgb(0, 255, 51);
   --primary-font-color: rgb(174, 180, 187);
-  --link-color: rgb(0, 255, 51);
+  --link-color: #00ff33;
   --primary-border-color: rgb(174, 180, 187);
 }
 
@@ -26,13 +26,13 @@
 }
 
 .light-mode {
-  --body-bg-color: #ffffff;
-  --nav-bg-color: rgba(245, 243, 244, 0.945);
-  --footer-bg-color: #f5f3f4;
-  --secondary-font-color: #d00000;
-  --primary-font-color: #161a1d;
-  --link-color: #d00000;
-  --primary-border-color: #fff;
+  --body-bg-color: #f8f9fa;
+  --nav-bg-color: rgba(233, 236, 239, 0.945);
+  --footer-bg-color: #e9ecef;
+  --secondary-font-color: #212529;
+  --primary-font-color: #495057;
+  --link-color: #343a40;
+  --primary-border-color: #dee2e6;
   transition: all 0.5s linear;
 }
 

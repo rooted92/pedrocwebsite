@@ -13,6 +13,7 @@ const Navbar = (): JSX.Element => {
     const [scrolled, setScrolled] = useState<boolean>(false);
 
     const [theme, setTheme] = useState('dark-mode');
+    const [isDark, setIsDark] = useState<boolean>(true);
     const body = document.body;
     body.classList.add(theme);
 
@@ -20,9 +21,11 @@ const Navbar = (): JSX.Element => {
         if (theme === 'dark-mode') {
             body.classList.remove(theme);
             setTheme('light-mode');
+            setIsDark(false);
         } else {
             body.classList.remove(theme);
             setTheme('dark-mode');
+            setIsDark(true);
         }
     }
 
@@ -53,9 +56,11 @@ const Navbar = (): JSX.Element => {
 
     return (
         <>
-            <nav className="lg:hidden">
-                <button>
-                    <FontAwesomeIcon icon={faMoon} style={{ color: "#00ff33", }} />
+            <nav className={`${scrolled ? 'fixed' : ''} z-10 w-screen lg:hidden`}>
+                <button
+                    className='absolute left-4 top-4 hover:scale-105 transform transition-all duration-200 ease-linear'
+                    onClick={handleThemeToggle}>
+                    <FontAwesomeIcon icon={faMoon} style={{ color: "#00ff33", }} /> <FontAwesomeIcon icon={faSun} style={{ color: "#ff6d00", }} />
                 </button>
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <div className="flex items-center"></div>
@@ -64,7 +69,7 @@ const Navbar = (): JSX.Element => {
                         <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
                     </button>
                     <div className={`${show ? '' : 'hidden'} w-full`} id="navbar-hamburger">
-                        <ul className="flex flex-col font-medium mt-4 rounded-lg smokeyGrayText nav-bg-color">
+                        <ul className="flex flex-col items-end font-medium mt-4 rounded-lg nav-bg-color">
                             <li>
                                 <a onClick={HamburgerMenuToggle} href="#about" className="block py-2 pl-3 pr-4">.about<span className='secondary-font-color'>(</span><span className='secondary-font-color'>)</span></a>
                             </li>
@@ -93,7 +98,7 @@ const Navbar = (): JSX.Element => {
                     <button
                         className='ml-8 absolute bottom-6 hover:scale-105 transform transition-all duration-200 ease-linear'
                         onClick={handleThemeToggle}>
-                        mode <FontAwesomeIcon icon={faMoon} style={{color: "#aeb4bb",}} /> <FontAwesomeIcon icon={faSun} style={{color: "#aeb4bb",}} />
+                        mode <FontAwesomeIcon icon={faMoon} style={{color: isDark ? '#00ff33' : "#495057",}} /> <FontAwesomeIcon icon={faSun} style={{color: !isDark ? "#ff6d00" : "#495057",}} />
                     </button>
                     <div className='nav-items-container flex justify-center mx-auto'>
                         <a href="#about" className='function-name text-center'>.about<span className='secondary-font-color'>(</span><span className='argument'>me</span><span className='r-parenthesis secondary-font-color'>)</span></a>
