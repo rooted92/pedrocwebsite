@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Dosis&family=Fugaz+One&family=Gochi+Hand&family=Inder&family=Inter:wght@400;700&family=Jaldi&family=Major+Mono+Display&family=Manrope:wght@800&family=Nunito&family=Orelega+One&family=Philosopher&family=Poor+Story&family=Prompt&family=Quattrocento&family=Roboto:wght@300;400;700&family=Rubik+Dirt&family=Single+Day&family=Space+Mono&family=Special+Elite&display=swap');
 
 :root {
+  --body-bg-color: rgb(0, 0, 9);
   --nav-bg-color: #000000f1;
   --light-neon-blue: #59f8e8;
   --single-day: 'Single Day', cursive, sans-serif;
@@ -11,20 +12,16 @@
 }
 
 .dark-mode {
+  --body-bg-color: rgb(0, 0, 9);
   --nav-bg-color: #000000f1;
-  --major-mono-display: 'Major Mono Display', monospace;
-  --ibm-plex-mono: 'IBM Plex Mono', monospace;
   --secondary-font-color: rgb(0, 255, 51);
   --primary-font-color: rgb(174, 180, 187);
 
 }
 
 .light-mode {
+  --body-bg-color: rgb(255, 255, 255);
   --nav-bg-color: #ffffff;
-  --light-neon-blue: #59f8e8;
-  --single-day: 'Single Day', cursive, sans-serif;
-  --major-mono-display: 'Major Mono Display', monospace;
-  --ibm-plex-mono: 'IBM Plex Mono', monospace;
   --secondary-font-color: rgb(0, 255, 51);
   --primary-font-color: rgb(174, 180, 187);
 }
@@ -54,7 +51,7 @@ html {
 /* min body height */
 body {
   min-height: 100svh;
-  background-color: rgb(0, 0, 9);
+  background-color: var(--body-bg-color);
 }
 
 /* responsive images/videos */

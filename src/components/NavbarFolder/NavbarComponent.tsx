@@ -3,6 +3,7 @@ import Resume from '../../assets/PedroC-resume.png';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faSun } from '@fortawesome/free-solid-svg-icons';
 
 
 const Navbar = (): JSX.Element => {
@@ -10,6 +11,20 @@ const Navbar = (): JSX.Element => {
     const [isHidden, setIsHidden] = useState<boolean>(false);
     const [show, setShow] = useState<boolean>(false);
     const [scrolled, setScrolled] = useState<boolean>(false);
+
+    const [theme, setTheme] = useState('darkTheme');
+    const body = document.body;
+    body.classList.add(theme);
+
+    const handleThemeToggle = () => {
+        if (theme === 'darkTheme') {
+            body.classList.remove(theme);
+            setTheme('lightTheme');
+        } else {
+            body.classList.remove(theme);
+            setTheme('darkTheme');
+        }
+    }
 
     const ResumeToggle = (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
@@ -76,7 +91,7 @@ const Navbar = (): JSX.Element => {
             <nav id='nav' className={`${scrolled ? 'nav-bg-color' : ''} invisible lg:visible w-full primary-font-color pb-2 pt-10 fixed z-10`}>
                 <div className="relative flex h-full w-full">
                     <button className='ml-8 absolute bottom-6'>
-                        mode <FontAwesomeIcon icon={faMoon} style={{color: "#aeb4bb",}} />
+                        mode <FontAwesomeIcon icon={faMoon} style={{color: "#aeb4bb",}} /> <FontAwesomeIcon icon={faSun} style={{color: "#aeb4bb",}} />
                     </button>
                     <div className='nav-items-container flex justify-center mx-auto'>
                         <a href="#about" className='function-name text-center'>.about<span className='secondary-font-color'>(</span><span className='argument'>me</span><span className='r-parenthesis secondary-font-color'>)</span></a>
