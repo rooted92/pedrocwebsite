@@ -12,7 +12,7 @@ const Navbar = (): JSX.Element => {
     const [show, setShow] = useState<boolean>(false);
     const [scrolled, setScrolled] = useState<boolean>(false);
 
-    const [theme, setTheme] = useState('dark-mode');
+    const [theme, setTheme] = useState<string>('dark-mode');
     const [isDark, setIsDark] = useState<boolean>(true);
     const body = document.body;
     body.classList.add(theme);
@@ -58,7 +58,7 @@ const Navbar = (): JSX.Element => {
         <>
             <nav className={`${scrolled ? 'fixed' : ''} z-10 w-screen lg:hidden`}>
                 <button
-                    className='absolute left-4 top-4 hover:scale-105 transform transition-all duration-200 ease-linear'
+                    className='absolute left-6 top-6 hover:scale-105 transform transition-all duration-200 ease-linear'
                     onClick={handleThemeToggle}>
                     <FontAwesomeIcon icon={faMoon} style={{ color: isDark ? "#00ff33" : "#495057" }} /> <FontAwesomeIcon icon={faSun} style={{ color: !isDark ? "#ff6d00" : "#495057" }} />
                 </button>

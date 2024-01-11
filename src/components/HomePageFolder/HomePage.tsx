@@ -65,7 +65,7 @@ const HomePage = (): JSX.Element => {
                                     I'm <span className='text-3xl secondary-font-color'>Pedro Castaneda</span>. DIY-er, food lover, hiker, & Software Developer. Aside from food I also &#x1F49A; to consume API's!</p>
                             </div>
                             <div className='flex justify-center'>
-                                <img className='mt-4 md:mt-0 md:w-3/4 md:h-96 md:object-cover md:object-top lg:w-auto' src={Headshot} alt="Pedro Castaneda" />
+                                <img className={`mt-4 md:mt-0 md:w-3/4 md:h-96 md:object-cover md:object-top lg:w-auto shadow-xl shadow-slate-700`} src={Headshot} alt="Pedro Castaneda" />
                             </div>
                         </div>
                     </div>

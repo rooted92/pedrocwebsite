@@ -5,8 +5,7 @@ hr {
 }
 
 #about img {
-  border-top: 1px solid var(--primary-border-color);
-  border-bottom: 1px solid var(--primary-border-color);
+  border-radius: .4rem;
 }
 
 .primary-font-color {
