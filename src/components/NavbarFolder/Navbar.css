@@ -179,6 +179,12 @@
 
 @media screen and (min-width: 1920px) {
   .nav-items-container {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .nav-items-container {
     width: 40%;
   }
 }
