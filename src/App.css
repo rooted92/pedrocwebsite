@@ -2,7 +2,7 @@
 
 :root {
   --body-bg-color: rgb(0, 0, 9);
-  --nav-bg-color: #000000f1;
+  --nav-bg-color: rgba(0, 0, 0, 0.945);
   --footer-bg-color: #000;
   --light-neon-blue: #59f8e8;
   --single-day: 'Single Day', cursive, sans-serif;
@@ -16,7 +16,7 @@
 
 .dark-mode {
   --body-bg-color: rgb(0, 0, 9);
-  --nav-bg-color: rgba(0, 0, 0, 0.945);
+  --nav-bg-color: rgba(0, 0, 0, 0.9);
   --footer-bg-color: #000;
   --secondary-font-color: rgb(0, 255, 51);
   --primary-font-color: rgb(174, 180, 187);

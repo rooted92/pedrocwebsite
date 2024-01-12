@@ -59,8 +59,11 @@ const Navbar = (): JSX.Element => {
             <nav className={`${scrolled ? 'fixed' : ''} z-10 w-screen lg:hidden`}>
                 <button
                     className='absolute left-6 top-6 hover:scale-105 transform transition-all duration-200 ease-linear'
-                    onClick={handleThemeToggle}>
-                    <FontAwesomeIcon icon={faMoon} style={{ color: isDark ? "#00ff33" : "#495057" }} /> <FontAwesomeIcon icon={faSun} style={{ color: !isDark ? "#ff6d00" : "#495057" }} />
+                    onClick={handleThemeToggle}
+                    aria-label="Toggle dark and light mode"
+                    aria-pressed={isDark ? 'true' : 'false'}
+                    title="Toggle dark and light mode">
+                    <FontAwesomeIcon icon={faMoon} style={{ color: isDark ? "#faf0ca" : "#495057" }} /> <FontAwesomeIcon icon={faSun} style={{ color: !isDark ? "#ff6d00" : "#495057" }} />
                 </button>
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <div className="flex items-center"></div>
@@ -97,8 +100,11 @@ const Navbar = (): JSX.Element => {
                 <div className="relative flex h-full w-full">
                     <button
                         className='ml-8 absolute bottom-6 hover:scale-105 transform transition-all duration-200 ease-linear'
-                        onClick={handleThemeToggle}>
-                        mode <FontAwesomeIcon icon={faMoon} style={{color: isDark ? '#00ff33' : "#495057",}} /> <FontAwesomeIcon icon={faSun} style={{color: !isDark ? "#ff6d00" : "#495057",}} />
+                        onClick={handleThemeToggle}
+                        aria-label="Toggle dark and light mode"
+                        aria-pressed={isDark ? 'true' : 'false'}
+                        title="Toggle dark and light mode">
+                        <FontAwesomeIcon icon={faMoon} style={{ color: isDark ? '#faf0ca' : "#495057", }} /> <FontAwesomeIcon icon={faSun} style={{ color: !isDark ? "#ff6d00" : "#495057", }} />
                     </button>
                     <div className='nav-items-container flex justify-center mx-auto'>
                         <a href="#about" className='function-name text-center'>.about<span className='secondary-font-color'>(</span><span className='argument'>me</span><span className='r-parenthesis secondary-font-color'>)</span></a>

@@ -33,7 +33,7 @@ import './HomePage.css';
 
 const HomePage = (): JSX.Element => {
 
-    const greetingsArr: Array<string> = ["Hi,", "Hey there,", "Greetings,", "Howdy,", "Salutations,", "Good day,", "Hello,", "Welcome,"];
+    const greetingsArr: Array<string> = ["Hi,", "Hey there,", "Greetings,", "Howdy,", "Salutations,", "Good day,", "Hello,", "Welcome,", "Cheers,", "Hello World,", "Hola,"];
     const [greeting, setGreeting] = useState<string>('Hi there,');
     const [isFaded, setIsFaded] = useState<boolean>(false);
 
@@ -62,7 +62,7 @@ const HomePage = (): JSX.Element => {
                             <div className='fadeIn'>
                                 <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold major-mono-display ${isFaded ? 'fadeIn' : ''}`}>{greeting}</h1>
                                 <p className='w-full text-2xl'>
-                                    I'm <span className='text-3xl secondary-font-color'>Pedro Castaneda</span>. DIY-er, food lover, hiker, & Software Developer. Aside from food I also &#x1F49A; to consume API's!</p>
+                                    I'm <span className='text-3xl secondary-font-color'>Pedro Castaneda</span>. My playgrounds are the kitchen, the mountains, and the code editor. In each, I find the same joy in discovery, the same satisfaction in connecting APIs to create something elegant and functional.</p>
                             </div>
                             <div className='flex justify-center'>
                                 <img className={`mt-4 md:mt-0 md:w-3/4 md:h-96 md:object-cover md:object-top lg:w-auto shadow-xl shadow-slate-700`} src={Headshot} alt="Pedro Castaneda" />
