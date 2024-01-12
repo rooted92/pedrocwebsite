@@ -88,10 +88,10 @@ const HomePage = (): JSX.Element => {
                                 </div>
                                 <div className='flex flex-col row-span-2'>
                                     <div className='flex flex-row'>
-                                        <h3 className='font-bold text-xl secondary-font-color'>Description</h3>
+                                        <h3 className='font-bold text-xl secondary-font-color mb-4'>Description</h3>
                                     </div>
-                                    <p className='smokeyGrayText'>Fleet Finder streamlines communication in transportation, making it easier for truck drivers and dispatch teams to track and update the status and location of trailers.</p>
-                                    <h3 className='font-bold text-xl mt-3 secondary-font-color'>Built with</h3>
+                                    <p className='mb-2'>Fleet Finder streamlines communication in transportation, making it easier for truck drivers and dispatch teams to track and update the status and location of trailers.</p>
+                                    <h3 className='font-bold text-xl mt-3 secondary-font-color mb-4'>Built with</h3>
                                     <div className="xl:grid xl:grid-cols-5 lg:grid lg:grid-cols-3 lg:gap-4 grid grid-cols-3 md:gap-x-8 md:gap-y-1 md:text-xs lg:text-base lg:p-4 mt-2">
                                         <IconComponent icon={ReactIcon} name='react.js' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                         <IconComponent icon={TypeScriptIcon} name='typescript' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -112,9 +112,9 @@ const HomePage = (): JSX.Element => {
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
-                                    <h3 className='font-bold text-xl secondary-font-color'>Description</h3>
-                                    <p className='smokeyGrayText'>A React.js application that enhances user experience by offering detailed Pokémon information through the Pokémon API, featuring search options, favorites management, and a user-friendly interface for Pokémon exploration.</p>
-                                    <h3 className='font-bold text-xl mt-3 secondary-font-color'>Built with</h3>
+                                    <h3 className='font-bold text-xl secondary-font-color mb-4'>Description</h3>
+                                    <p className='mb-2'>A React.js application that enhances user experience by offering detailed Pokémon information through the Pokémon API, featuring search options, favorites management, and a user-friendly interface for Pokémon exploration.</p>
+                                    <h3 className='font-bold text-xl mt-3 secondary-font-color mb-4'>Built with</h3>
                                     <div className="grid grid-cols-3 md:gap-x-8 md:text-sm lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-5 lg:p-4 mt-2">
                                         <IconComponent icon={ReactIcon} name='react.js' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                         <IconComponent icon={TypeScriptIcon} name='typescript' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -133,9 +133,9 @@ const HomePage = (): JSX.Element => {
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
-                                    <h3 className='font-bold text-xl secondary-font-color'>Description</h3>
-                                    <p className='smokeyGrayText'>This web app leverages the Star Wars API to dynamically display data from the Star Wars universe, offering user-driven search functionality, navigation through pagination, and engaging features like loading animations.</p>
-                                    <h3 className='font-bold text-xl mt-3 secondary-font-color'>Built with</h3>
+                                    <h3 className='font-bold text-xl secondary-font-color mb-4'>Description</h3>
+                                    <p className='mb-2'>This web app leverages the Star Wars API to dynamically display data from the Star Wars universe, offering user-driven search functionality, navigation through pagination, and engaging features like loading animations.</p>
+                                    <h3 className='font-bold text-xl mt-3 secondary-font-color mb-4'>Built with</h3>
                                     <div className="grid grid-cols-3 md:gap-x-8 md:gap-y-1 md:text-sm lg:grid lg:grid-cols-4 lg:gap-x-4 xl:grid xl:grid-cols-5 lg:p-4 mt-2">
                                         <IconComponent icon={HTMLIcon} name='html' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                         <IconComponent icon={CSSIcon} name='css' iconClasses='h-auto w-8 lg:w-14 self-center' />
@@ -156,9 +156,9 @@ const HomePage = (): JSX.Element => {
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
-                                    <h3 className='font-bold text-xl secondary-font-color'>Description</h3>
-                                    <p>An app that employs the adviceslip API to provide random advice at the click of a button, offering a dynamic and user-engaging experience with a design that mirrors the meticulous style of Frontmentor.</p>
-                                    <h3 className='font-bold text-xl mt-3 secondary-font-color'>Built with</h3>
+                                    <h3 className='font-bold text-xl secondary-font-color mb-4'>Description</h3>
+                                    <p className='mb-2'>An app that employs the adviceslip API to provide random advice at the click of a button, offering a dynamic and user-engaging experience with a design that mirrors the meticulous style of Frontmentor.</p>
+                                    <h3 className='font-bold text-xl mt-3 secondary-font-color mb-4'>Built with</h3>
                                     <div className="grid grid-cols-3 md:gap-x-8 md:gap-y-1 md:text-sm lg:grid lg:grid-cols-4 lg:gap-x-4 xl:grid xl:grid-cols-5 lg:p-4 mt-2">
                                         <IconComponent icon={ReactIcon} name='react.js' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                         <IconComponent icon={BootstrapIcon} name='bootstrap' iconClasses='h-auto w-8 lg:w-14 self-center' />
