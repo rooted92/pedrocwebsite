@@ -5,8 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import { faSun } from '@fortawesome/free-solid-svg-icons';
 import ResumeComponent from '../ResumeFolder/ResumeComponent';
-import resumeMd from "../../assets/resume.md";
-
 
 const Navbar = (): JSX.Element => {
 
@@ -55,8 +53,6 @@ const Navbar = (): JSX.Element => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-
-    console.log(resumeMd)
 
     return (
         <>
@@ -121,7 +117,7 @@ const Navbar = (): JSX.Element => {
                 </div>
             </nav>
 
-            <div className={`${isHidden ? 'flex' : 'hidden'} fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40`} onClick={handleClose}>
+            <div className={`${isHidden ? 'flex' : 'hidden'} fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40`} >
                 <div id='resume' className='w-full h-full overflow-y-auto p-4'>
                     <div className='flex flex-col items-center'>
                         <button onClick={handleClose} className='mb-5 self-end close-icon'>
