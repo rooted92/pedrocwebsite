@@ -56,6 +56,8 @@ const Navbar = (): JSX.Element => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    console.log(resumeMd)
+
     return (
         <>
             <nav className={`${scrolled ? 'fixed' : ''} z-10 w-screen lg:hidden`}>
@@ -126,7 +128,7 @@ const Navbar = (): JSX.Element => {
                             <div className="close-icon-line"></div>
                             <div className="close-icon-line"></div>
                         </button>
-                        <ResumeComponent resume={resumeMd} />
+                        <ResumeComponent />
                     </div>
                 </div>
             </div>

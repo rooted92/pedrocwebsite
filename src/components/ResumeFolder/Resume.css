@@ -1,0 +1,54 @@
+.resume-modal {
+    background-color: white;
+    color: black;
+    padding: 3rem 5rem;
+}
+
+.resume-modal h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.resume-modal h1 + p {
+    text-align: balance;
+}
+
+.resume-modal h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.resume-modal h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.resume-modal h2,
+.resume-modal h3 {
+    margin-top: 1rem;
+}
+
+.resume-modal h1,
+.resume-modal h2,
+.resume-modal h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.resume-modal a {
+    text-decoration: underline;
+    transition: transform 0.2s ease-in-out;
+}
+
+.resume-modal a:hover {
+    transform: scale(1.1);
+}
+
+.resume-modal li {
+    margin-bottom: 0.5rem;
+    list-style: circle;
+    list-style-position: inside;
+}
