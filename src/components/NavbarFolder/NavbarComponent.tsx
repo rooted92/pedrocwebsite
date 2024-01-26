@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import { faSun } from '@fortawesome/free-solid-svg-icons';
+import ResumeComponent from '../ResumeFolder/ResumeComponent';
+import resumeMd from "../../assets/resume.md";
 
 
 const Navbar = (): JSX.Element => {
@@ -124,7 +126,7 @@ const Navbar = (): JSX.Element => {
                             <div className="close-icon-line"></div>
                             <div className="close-icon-line"></div>
                         </button>
-                        <img src={Resume} alt="Pedro's Resume" className='max-w-full h-auto' />
+                        <ResumeComponent resume={resumeMd} />
                     </div>
                 </div>
             </div>
