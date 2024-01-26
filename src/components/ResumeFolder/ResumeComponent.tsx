@@ -1,6 +1,4 @@
 import React from "react";
-import './Resume.css';
-import 'tailwindcss/tailwind.css';
 
 const ResumeComponent: React.FC = () => {
 
