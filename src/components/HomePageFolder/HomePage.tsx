@@ -36,6 +36,11 @@ const HomePage = (): JSX.Element => {
     const greetingsArr: Array<string> = ["Hi,", "Hey there,", "Greetings,", "Howdy,", "Salutations,", "Good day,", "Hello,", "Welcome,", "Cheers,", "Hello World,", "Hola,"];
     const [greeting, setGreeting] = useState<string>('Hi there,');
     const [isFaded, setIsFaded] = useState<boolean>(false);
+    const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
+
+    const handleDarkModeToggle = (value: boolean) => {
+        setIsDarkMode(value);
+    }
 
     useEffect(() => {
         // saving setInterval to variable to be cleared every 3 seconds
@@ -55,7 +60,7 @@ const HomePage = (): JSX.Element => {
     return (
         <>
             <div id='top' className="flex flex-col h-screen ibm-plex-mono primary-font-color">
-                <Navbar />
+                <Navbar onDarkModeToggle={handleDarkModeToggle} />
                 <div className="flex-grow container mx-auto">
                     <div id='about' className="container mx-10 mt-5 md:mx-24  md:mt-12 lg:mt-48 w-auto">
                         <div className="grid grid-cols-1 gap-y-8 lg:gap-0 lg:grid-cols-2">
@@ -207,7 +212,7 @@ const HomePage = (): JSX.Element => {
                         </div>
                     </div>
                 </div>
-                <Footer />
+                <Footer isDarkMode={isDarkMode} />
             </div>
         </>
     );

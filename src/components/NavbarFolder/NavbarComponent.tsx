@@ -5,8 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import { faSun } from '@fortawesome/free-solid-svg-icons';
 import ResumeComponent from '../ResumeFolder/ResumeComponent';
+import { on } from 'events';
 
-const Navbar = (): JSX.Element => {
+interface Props {
+    onDarkModeToggle: (value: boolean) => void;
+}
+
+const Navbar = ({onDarkModeToggle}: Props): JSX.Element => {
 
     const [isHidden, setIsHidden] = useState<boolean>(false);
     const [show, setShow] = useState<boolean>(false);
@@ -22,10 +27,12 @@ const Navbar = (): JSX.Element => {
             body.classList.remove(theme);
             setTheme('light-mode');
             setIsDark(false);
+            onDarkModeToggle(isDark);
         } else {
             body.classList.remove(theme);
             setTheme('dark-mode');
             setIsDark(true);
+            onDarkModeToggle(isDark);
         }
     }
 

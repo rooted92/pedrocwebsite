@@ -6,7 +6,13 @@ import ReactIcon from '../../assets/atom.svg';
 import TypescriptIcon from '../../assets/typescript.svg';
 import TailwindIcon from '../../assets/tailwindIcon.png';
 
-const Footer = (): JSX.Element => {
+interface Props {
+    isDarkMode: boolean;
+}
+
+const Footer = ({ isDarkMode }: Props) => {
+
+    const logoSrc = !isDarkMode ? process.env.PUBLIC_URL + '/pc-high-resolution-logo-transparent.svg' : process.env.PUBLIC_URL + '/pc-high-resolution-logo-black-transparent.svg';
 
     return (
         <>
@@ -40,6 +46,9 @@ const Footer = (): JSX.Element => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className='w-full h-12 bg-transparent text-white text-center'>
+                    <p className='mt-2 mx-auto primary-font-color'><a href="#top"><img src={logoSrc} alt="Logo" className="h-4 w-auto inline-block mr-3" /></a>© 2024 Pedro Castaneda</p>
                 </div>
             </footer>
         </>
