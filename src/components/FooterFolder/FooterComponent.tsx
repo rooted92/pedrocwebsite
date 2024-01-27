@@ -12,7 +12,7 @@ interface Props {
 
 const Footer = ({ isDarkMode }: Props) => {
 
-    const logoSrc = isDarkMode ? process.env.PUBLIC_URL + '/pc-high-resolution-logo-transparent.svg' : process.env.PUBLIC_URL + '/pc-high-resolution-logo-black-transparent.svg';
+    const logoSrc = !isDarkMode ? process.env.PUBLIC_URL + '/pc-high-resolution-logo-black-transparent.svg' : process.env.PUBLIC_URL + '/pc-high-resolution-logo-transparent.svg';
 
     return (
         <>
