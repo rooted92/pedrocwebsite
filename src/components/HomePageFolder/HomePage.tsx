@@ -71,8 +71,8 @@ const HomePage = (): JSX.Element => {
         <>
             <div id='top' className="flex flex-col h-screen ibm-plex-mono primary-font-color">
                 <Navbar onDarkModeToggle={handleDarkModeToggle} />
-                <div className="flex-grow container mx-auto">
-                    <div id='about' className="container mx-10 mt-5 md:mx-24  md:mt-12 lg:mt-48 w-auto">
+                <div className="flex-grow-1 container">
+                    <div id='about' className="container mx-2 mt-5 md:mx-24  md:mt-12 lg:mt-48 w-auto">
                         <div className="grid grid-cols-1 gap-y-8 lg:gap-0 lg:grid-cols-2">
                             <div className='fadeIn'>
                                 <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold major-mono-display ${isFaded ? 'fadeIn' : ''}`}>{greeting}</h1>
@@ -127,8 +127,8 @@ const HomePage = (): JSX.Element => {
                             <section className="grid grid-cols-1 lg:grid-cols-2">
                                 <div className='mb-4 md:mb-0 md:h-72 flex flex-col items-center align-middle w-full'>
                                     <div className='flex flex-col items-center'>
-                                        <img className='h-auto w-12 md:w-36 mt-6' src={LunaLink} alt="Fleet Finder icon" />
-                                        <p className='mt-4 self-center text-lg md:text-4xl'>Luna Link</p>
+                                        <img className='h-auto w-24 md:w-36 mt-6' src={LunaLink} alt="Fleet Finder icon" />
+                                        <p className='self-center text-lg md:text-4xl'>Luna Link</p>
                                     </div>
                                     <div className="flex flex-col xs:flex-row justify-between items-center xs:space-x-6">
                                         <a href='https://github.com/rooted92/trucker-app-sandbox' target='_blank' rel='noreferrer' className='text-sm mt-8 py-2'>GitHub Repository</a>
