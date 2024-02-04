@@ -28,6 +28,16 @@ import WordPressIcon from '../../assets/wordpress_icon.png';
 import PHPIcon from '../../assets/php_icon.png';
 import WrikeIcon from '../../assets/wrike.svg';
 import GitIcon from '../../assets/git.svg';
+import MongoDB from '../../assets/mongodb.svg';
+import Mongoose from '../../assets/mongoose.svg';
+import NodeJs from '../../assets/nodejs.svg';
+import EJS from '../../assets/ejs.svg';
+import ExpressJs from '../../assets/expressjs.svg';
+import Joi from '../../assets/joi.png';
+import LunaLink from '../../assets/luna-link.svg';
+import TFE from '../../assets/tfe.svg';
+import BrowserStack from '../../assets/browserstack.svg';
+import Local from '../../assets/local.png';
 
 import './HomePage.css';
 
@@ -39,7 +49,7 @@ const HomePage = (): JSX.Element => {
     const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
 
     const handleDarkModeToggle = (value: boolean) => {
-        setIsDarkMode(value);
+        setIsDarkMode(!value);
     }
 
     useEffect(() => {
@@ -74,18 +84,82 @@ const HomePage = (): JSX.Element => {
                             </div>
                         </div>
                     </div>
+                    <div id='experience'></div>
+                    <div className='elegant-link container mt-4 md:mx-24 w-auto md:mt-10 lg:mt-32'>
+                        <h2 className='secondary-font-color font-bold text-4xl mt-12 md:mb-8 major-mono-display text-center lg:mt-0'>Experience</h2>
+                        <div className="container mx-auto w-auto px-10 smokeyGrayText">
+                            <section className="grid grid-cols-1 lg:grid-cols-2">
+                                <div className='mb-4 md:mb-0 md:h-72 flex flex-col items-center align-middle w-full'>
+                                    <div className='flex flex-col items-center'>
+                                        <img className='h-auto w-12 md:w-80 mt-6' src={TFE} alt="Fleet Finder icon" />
+                                        <p className='mt-4 self-center text-lg md:text-4xl'></p>
+                                    </div>
+                                    <div className="flex flex-col xs:flex-row justify-between items-center xs:space-x-6">
+                                        <a href='https://www.sutterhome.com/' target='_blank' rel='noreferrer' className='text-sm mt-8 py-2'>Sutterhome</a>
+                                        <a href='https://www.neyersvineyards.com/' target='_blank' rel='noreferrer' className='text-sm mt-8 py-2'>Neyers Vineyards</a>
+                                    </div>
+                                </div>
+                                <div className='flex flex-col row-span-2'>
+                                    <div className='flex flex-row'>
+                                        <h3 className='font-bold text-xl secondary-font-color mb-4'>Web Developer</h3>
+                                    </div>
+                                    <p className=' font-extrabold'>June 2023 - December 2023</p>
+                                    <p className='mb-2'>At Trinchero, I worked with a team to improve web accessibility, achieving a 97% WCAG compliance rate! I simplified customer order processing by using PHP and Gravity Forms hooks to convert data into CSV format. I played a key role in upgrading e-commerce platforms, refining functionality with a blend of front-end technologies, and automated site deployments via GitHub. My contributions also included debugging, building webpages for sutterhome based on UI/UX wireframes, and enhancing plugin features.</p>
+                                    <h3 className='font-bold text-xl mt-3 secondary-font-color mb-4'>Tech Stack</h3>
+                                    <div className="xl:grid xl:grid-cols-5 lg:grid lg:grid-cols-3 lg:gap-4 grid grid-cols-3 md:gap-x-8 md:gap-y-1 md:text-xs lg:text-base lg:p-4 mt-2">
+                                        <IconComponent icon={WordPressIcon} name='wordpress' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                        <IconComponent icon={PHPIcon} name='php' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                        <IconComponent icon={Local} name='local' iconClasses='h-auto w-8 lg:w-56 self-center' />
+                                        <IconComponent icon={BootstrapIcon} name='bootstrap' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                        <IconComponent icon={CSSIcon} name='css' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                        <IconComponent icon={JavascriptIcon} name='javascript' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                        <IconComponent icon={BrowserStack} name='browserstack' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                    </div>
+                                </div>
+                            </section>
+                            <hr className='my-6' />
+                        </div>
+                    </div>
                     <div id='projects'></div>
                     <div className='elegant-link container mt-4 md:mx-24 w-auto md:mt-10 lg:mt-32'>
                         <h2 className='secondary-font-color font-bold text-4xl mt-12 md:mb-8 major-mono-display text-center lg:mt-0'>Projects</h2>
                         <div className="container mx-auto w-auto px-10 smokeyGrayText">
+                            <section className="grid grid-cols-1 lg:grid-cols-2">
+                                <div className='mb-4 md:mb-0 md:h-72 flex flex-col items-center align-middle w-full'>
+                                    <div className='flex flex-col items-center'>
+                                        <img className='h-auto w-12 md:w-36 mt-6' src={LunaLink} alt="Fleet Finder icon" />
+                                        <p className='mt-4 self-center text-lg md:text-4xl'>Luna Link</p>
+                                    </div>
+                                    <div className="flex flex-col xs:flex-row justify-between items-center xs:space-x-6">
+                                        <a href='https://github.com/rooted92/trucker-app-sandbox' target='_blank' rel='noreferrer' className='text-sm mt-8 py-2'>GitHub Repository</a>
+                                    </div>
+                                </div>
+                                <div className='flex flex-col row-span-2'>
+                                    <div className='flex flex-row'>
+                                        <h3 className='font-bold text-xl secondary-font-color mb-4'>Description</h3>
+                                    </div>
+                                    <p className='mb-2'>Luna Link, the next iteration of Fleet Finder, is in prototype stage using EJS over React within the MERN stack—preparing for a React-based, production-ready launch.</p>
+                                    <h3 className='font-bold text-xl mt-3 secondary-font-color mb-4'>Built with</h3>
+                                    <div className="xl:grid xl:grid-cols-5 lg:grid lg:grid-cols-3 lg:gap-4 grid grid-cols-3 md:gap-x-8 md:gap-y-1 md:text-xs lg:text-base lg:p-4 mt-2">
+                                        <IconComponent icon={MongoDB} name='mongodb' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                        <IconComponent icon={ExpressJs} name='express' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                        <IconComponent icon={Mongoose} name='mongoose' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                        <IconComponent icon={EJS} name='ejs' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                        <IconComponent icon={NodeJs} name='nodejs' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                        <IconComponent icon={BootstrapIcon} name='bootstrap' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                        <IconComponent icon={Joi} name='joi' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                    </div>
+                                </div>
+                            </section>
+                            <hr className='my-6' />
                             {/* Project #1 */}
                             <section className="grid grid-cols-1 lg:grid-cols-2">
                                 <div className='mb-4 md:mb-0 md:h-72 flex flex-col items-center align-middle w-full'>
-                                    <div className='flex md:flex-col md:items-center lg:flex-row'>
+                                    <div className='flex flex-col items-center'>
                                         <img className='h-auto w-12 md:w-24 mt-6' src={FleetFinderIcon} alt="Fleet Finder icon" />
                                         <p className='mt-4 self-center text-lg md:text-4xl'>Fleet Finder</p>
                                     </div>
-                                    <div className="flex justify-between items-center space-x-6 flex-wrap">
+                                    <div className="flex flex-col xs:flex-row justify-between items-center xs:space-x-6">
                                         <a href='https://fleetfinder.pedroc.dev/' target='_blank' rel='noreferrer' className='text-sm mt-8 py-2'>Live Demo</a>
                                         <a href='https://github.com/rooted92/frontendFF' target='_blank' rel='noreferrer' className='text-sm mt-8 py-2'>Frontend Code</a>
                                         <a href='https://github.com/rooted92/backendFF' target='_blank' rel='noreferrer' className='mt-8 py-2 text-sm'>Backend Code</a>
@@ -181,25 +255,33 @@ const HomePage = (): JSX.Element => {
                             <div className="flex flex-col items-center">
                                 <h3 className='major-mono-display font-bold text-2xl mb-3 md:mb-0'>Development</h3>
                                 <div className='gap-4 grid grid-cols-3 md:gap-2 lg:grid lg:grid-cols-3 lg:gap-4 xl:grid xl:grid-cols-4 xl:gap-8 md:mt-8 lg:mt-14'>
-                                    <IconComponent icon={HTMLIcon} name='html' iconClasses='h-auto w-8 lg:w-14 self-center' />
-                                    <IconComponent icon={CSSIcon} name='css' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={JavascriptIcon} name='javascript' iconClasses='h-auto w-8 lg:w-14 self-center rounded' />
                                     <IconComponent icon={TypeScriptIcon} name='typescript' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                    <IconComponent icon={HTMLIcon} name='html' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                    <IconComponent icon={CSSIcon} name='css' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={CSharp} name='c-sharp' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                    <IconComponent icon={MongoDB} name='mongodb' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                    <IconComponent icon={Mongoose} name='mongoose' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                    <IconComponent icon={ExpressJs} name='express' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                    <IconComponent icon={NodeJs} name='nodejs' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                    <IconComponent icon={EJS} name='ejs' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={ReactIcon} name='react.js' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={TailwindIcon} name='tailwind' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={BootstrapIcon} name='bootstrap' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={WordPressIcon} name='wordpress' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={PHPIcon} name='php' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={GitIcon} name='git' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                    <IconComponent icon={Joi} name='joi' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                 </div>
                             </div>
                             <div className='flex flex-col items-center'>
                                 <h3 className='major-mono-display font-bold text-2xl mb-3 md:mb-0 mt-4 md:mt-0'>Productivity</h3>
                                 <div className='grid grid-cols-3 gap-4 md:gap-2 lg:grid lg:grid-cols-3 lg:gap-4 xl:grid xl:grid-cols-4 xl:gap-8 md:mt-8 lg:mt-14'>
                                     <IconComponent icon={VSCodeIcon} name='vs code' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                    <IconComponent icon={Local} name='local' iconClasses='h-auto w-8 lg:w-56 self-center' />
                                     <IconComponent icon={GitHubIcon} name='github' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={PostmanIcon} name='postman' iconClasses='h-auto w-8 lg:w-14 self-center' />
+                                    <IconComponent icon={BrowserStack} name='browserstack' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={AzureIcon} name='azure' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={JiraIcon} name='jira' iconClasses='h-auto w-8 lg:w-14 self-center' />
                                     <IconComponent icon={FigmaIcon} name='figma' iconClasses='h-auto w-8 lg:w-14 self-center' />

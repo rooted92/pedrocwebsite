@@ -1,11 +1,9 @@
 import './Navbar.css';
-import Resume from '../../assets/PedroC-resume.png';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import { faSun } from '@fortawesome/free-solid-svg-icons';
 import ResumeComponent from '../ResumeFolder/ResumeComponent';
-import { on } from 'events';
 
 interface Props {
     onDarkModeToggle: (value: boolean) => void;
