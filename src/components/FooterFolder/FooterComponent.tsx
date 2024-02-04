@@ -17,8 +17,8 @@ const Footer = ({ isDarkMode }: Props) => {
     return (
         <>
             <footer className='elegant-link mt-8'>
-                <div className='w-full md:h-52 mt-8 pb-8'>
-                    <div className="grid grid-cols-1 md:grid-cols-3 px-20 md:px-0 primary-font-color mt-12">
+                <div className='h-auto w-screen mt-8 pb-8'>
+                    <div className="grid grid-cols-1 md:grid-cols-3 px-8 md:px-0 primary-font-color mt-12">
                         <div id='contact' className='flex flex-col mb-6 md:mb-0 md:items-center'>
                             <h3 className='font-bold text-xl secondary-font-color'>Contact</h3>
                             <a className='primary-font-color mt-2' href="mailto:pedro@pedroc.dev">pedro@pedroc.dev</a>
