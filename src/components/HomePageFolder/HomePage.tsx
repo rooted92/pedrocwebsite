@@ -92,11 +92,11 @@ const HomePage = (): JSX.Element => {
                                 <div className='mb-4 md:mb-0 md:h-72 flex flex-col items-center justify-center row-span-2'>
                                     <div className='flex flex-col items-center justify-center'>
                                         <img className='h-auto w-48 md:w-80 mt-6' src={TFE} alt="Trinchero Family Estates logo" />
-                                        <p className='self-center text-lg md:text-4xl'></p>
                                     </div>
+                                    <p class="text-lg text-center">TFE Brands</p>
                                     <div className="flex flex-col xs:flex-row justify-between items-center xs:space-x-6">
-                                        <a href='https://www.sutterhome.com/' target='_blank' rel='noreferrer' className='text-sm md:mt-8 py-2'>Sutterhome</a>
-                                        <a href='https://www.neyersvineyards.com/' target='_blank' rel='noreferrer' className='text-sm md:mt-8 py-2'>Neyers Vineyards</a>
+                                        <a href='https://www.sutterhome.com/' target='_blank' rel='noreferrer' className='text-sm md:mt-8 py-2'>Visit Sutter home</a>
+                                        <a href='https://www.neyersvineyards.com/' target='_blank' rel='noreferrer' className='text-sm md:mt-8 py-2'>Visit Neyers Vineyards</a>
                                     </div>
                                 </div>
                                 <div className='flex flex-col row-span-2'>
